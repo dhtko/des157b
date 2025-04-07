@@ -55,11 +55,15 @@ h2{
     width: 880px;
     height: 270px;
 }
-#test{
+#sunAndmoon{
+    display: block;
+    width: 100px;
+    
     position: absolute;
-    top: 2%;
-    right: 15%;
+    top: 0%;
+    right: 10%;
 }
+
 
 
 /*body CSS*/

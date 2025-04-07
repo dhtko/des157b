@@ -7,18 +7,20 @@
     const bannerImg = document.querySelector('#bannerImage');
     const CSSLink = document.querySelector('#theme');
 
-    const dry = document.querySelector('#test');
-    dry.addEventListener('click', function(){
+    const sunMoon = document.querySelector('#sunAndmoon');
+    sunMoon.addEventListener('click', function(){
         clickCount++;
         console.log(clickCount);
 
         if (clickCount % 2 === 0){ //even
             CSSLink.href = "stylesDevil.css";
             bannerImg.src = "./images/devilMochi.png";
+            sunMoon.src = "./images/moon.png";
         }
         else{ //odd
             CSSLink.href = "stylesAngel.css";
             bannerImg.src = "./images/angelMochi.png";
+            sunMoon.src = "./images/sun.png";
         }
     });
 })();
