@@ -57,11 +57,11 @@ h2{
 }
 #sunAndmoon{
     display: block;
-    width: 100px;
+    width: 80px;
     
     position: absolute;
-    top: 0%;
-    right: 10%;
+    top: 1%;
+    right: 26%;
 }
 
 
