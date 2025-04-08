@@ -17,13 +17,13 @@
             CSSLink.href = "stylesDevil.css";
             bannerImg.src = "./images/devilMochi.png";
             sunMoon.src = "./images/moonIcon.png";
-            hiddenMessage.innerHTML = "Let There BE Light";
+            hiddenMessage.innerHTML = "Let There Be Light";
         }
         else{ //odd (angel)
             CSSLink.href = "stylesAngel.css";
             bannerImg.src = "./images/angelMochi.png";
             sunMoon.src = "./images/sunIcon.png";
-            hiddenMessage.innerHTML = "Let Darkness Fall Upon";
+            hiddenMessage.innerHTML = "Embrace The Darkness";
         }
     });
     sunMoon.addEventListener('mouseover', function(){
