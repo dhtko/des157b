@@ -17,7 +17,7 @@ header{
    justify-content: center;
    text-align: center;
 
-   margin: 15px auto;
+   margin: 15px auto 0 auto;
 }
 h1, h2{
     margin: 0;
@@ -63,11 +63,31 @@ h2{
     top: 0%;
     right: 30%;
 }
+#hiddenText{
+    margin: 20px 0 0 0;
+
+    font-family: "Quintessential";
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    
+    transition: all 0.5s;
+}
+.showing{
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.5s;
+}
 
 
 /*body CSS*/
 main{
-    margin: 20px 0;
+    margin: 20px;
 
     display: flex;
     flex-direction: column;
@@ -127,6 +147,9 @@ ul li a{
 
 /*responsive design*/
 @media only screen and (min-width: 900px){
+    #hiddenText{
+        font-size: 25px;
+    }
     main{
         flex-direction: row;
         gap: 10px;
