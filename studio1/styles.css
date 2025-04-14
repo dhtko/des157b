@@ -26,16 +26,17 @@
 #line{
     position: absolute;
 
-    bottom: 3%;
+    top: 3%;
     left: 3%;
 }
 #line p{
     margin: 0;
     padding: 0;
     
-    color: rgb(102, 68, 122);
+    color: rgb(255, 255, 255);
     font-family: "Fredericka the Great";
-    font-size: 30px;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 
 #troubleshoot{
@@ -45,15 +46,13 @@
     right: 0%;
 
     background-color: gray;
-    width: 200px;
+    width: 220px;
     height: 40px;
 
     margin: 0;
-    padding: 10px;
+    padding: 5px 10px 5px 10px;
 }
 #troubleshoot p{
-    text-align: center;
-    
     margin: 0;
     padding: auto;
 
@@ -67,8 +66,12 @@ a{
 .hidden{
     opacity: 0;
     visibility: hidden;
+
+    transition: all 0.2s ease;
 }
 .showing{
     opacity: 1;
     visibility: visible;
+
+    transition: all 0.2s ease;
 }
