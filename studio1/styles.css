@@ -16,12 +16,12 @@
     font-size: 36px;
     color: rgb(55, 55, 55);
 
-    transform: all 0.5s;
+    transition: all 0.5s ease;
 }
 .fa-expand:hover{
     cursor: pointer;
     color: rgb(158, 28, 194);
-    transform: all 0.5s;
+    transition: all 0.5s ease;
 }
 
 
@@ -84,7 +84,6 @@
 }
 #troubleshoot p{
     margin: 0;
-    padding: auto;
 
     font-family: "National Park";
     font-size: 13px;

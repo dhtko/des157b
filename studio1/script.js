@@ -38,6 +38,7 @@
 
     //loadingText animation
     video.addEventListener('playing', function(){
+        //loading animtation stops when the video start playing
         loading.style.display = 'none';
 
         //the looping text starts after the video actually starts
