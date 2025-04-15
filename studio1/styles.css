@@ -8,6 +8,7 @@
     filter: grayscale(50%) contrast(100%) invert(0%);
 }
 
+
 .fa-expand{
     position: absolute;
     top: 10px;
@@ -23,6 +24,38 @@
     transform: all 0.5s;
 }
 
+
+#loadingText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+#loadingText p{
+    color: rgb(37, 37, 37);
+    font-family: 'Rubik Glitch';
+    font-size: 25px;
+
+    animation: loadingText 10s infinite alternate ease-in-out;
+}
+@keyframes loadingText{
+    0%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+}
+
+
 #line{
     position: absolute;
 
@@ -35,9 +68,10 @@
     
     color: rgb(255, 255, 255);
     font-family: "Fredericka the Great";
-    font-size: 35px;
+    font-size: 40px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
+
 
 #troubleshoot{
     position: absolute;
@@ -63,6 +97,7 @@ a{
     text-decoration: none;
 }
 
+
 .hidden{
     opacity: 0;
     visibility: hidden;
@@ -75,3 +110,5 @@ a{
 
     transition: all 0.2s ease;
 }
+
+
