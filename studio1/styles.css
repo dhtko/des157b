@@ -20,7 +20,7 @@
 }
 .fa-expand:hover{
     cursor: pointer;
-    color: orange;
+    color: rgb(158, 28, 194);
     transform: all 0.5s;
 }
 
@@ -79,10 +79,6 @@
     bottom: 0%;
     right: 0%;
 
-    background-color: gray;
-    width: 220px;
-    height: 40px;
-
     margin: 0;
     padding: 5px 10px 5px 10px;
 }
@@ -91,10 +87,29 @@
     padding: auto;
 
     font-family: "National Park";
+    font-size: 13px;
+    color: rgb(0, 0, 0);
 }
 a{
-    color: blue;
+    color: rgb(9, 0, 170);
     text-decoration: none;
+}
+
+
+#instruction{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    width: 400px;
+}
+#instruction p{
+    margin: 0;
+    padding: 5px 10px;
+
+    font-family: "National Park";
+    font-size: 16px;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -110,5 +125,3 @@ a{
 
     transition: all 0.2s ease;
 }
-
-
