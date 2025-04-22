@@ -25,4 +25,50 @@ body{
 header{
     margin: 0px;
     padding: 0px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#barGraph{
+    width: 1100px;
+    height: 250px;
+}
+#centerBar{
+    width: 1100px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 20px;
+}
+#dayDate{
+    width: 1100px;
+    height: 100px;
+    margin: 0;
+
+    display: flex;
+}
+#dayDate p{
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+#dayDate p:first-child{
+    color: red;
+    margin-left: 50px;
+}
+.rotateTxt{
+    transform: rotate(90deg);
+    transform-origin: left top;
+}
+#detailStat{
+    background-color: green;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    margin: 40px 0 0 0;
+    padding: 20px;    
 }
