@@ -1,0 +1,72 @@
+[
+    {
+        "Date": "2024/06/04",
+        "Number of Games": 8,
+        "Number of Wins": 2
+    },
+    {
+        "Date": "2024/05/18",
+        "Number of Games": 12,
+        "Number of Wins": 6
+    },
+    {
+        "Date": "2024/05/15",
+        "Number of Games": 6,
+        "Number of Wins": 5
+    },
+    {
+        "Date": "2024/05/12",
+        "Number of Games": 12,
+        "Number of Wins": 5
+    },
+    {
+        "Date": "2024/05/11",
+        "Number of Games": 10,
+        "Number of Wins": 3
+    },
+    {
+        "Date": "2024/05/10",
+        "Number of Games": 8,
+        "Number of Wins": 4
+    },
+    {
+        "Date": "2024/05/07",
+        "Number of Games": 19,
+        "Number of Wins": 11
+    },
+    {
+        "Date": "2024/05/06",
+        "Number of Games": 9,
+        "Number of Wins": 6
+    },
+    {
+        "Date": "2024/04/17",
+        "Number of Games": 6,
+        "Number of Wins": 4
+    },
+    {
+        "Date": "2024/04/07",
+        "Number of Games": 7,
+        "Number of Wins": 5
+    },
+    {
+        "Date": "2024/03/31",
+        "Number of Games": 10,
+        "Number of Wins": 6
+    },
+    {
+        "Date": "2024/03/29",
+        "Number of Games": 7,
+        "Number of Wins": 4
+    },
+    {
+        "Date": "2024/03/24",
+        "Number of Games": 9,
+        "Number of Wins": 9
+    },
+    {
+        "Date": "2024/03/23",
+        "Number of Games": 12,
+        "Number of Wins": 6
+    }
+]
