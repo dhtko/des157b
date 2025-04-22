@@ -1,0 +1,28 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    box-sizing: border-box; /*make sure to center the content*/
+    
+    width: 1200px; /*viewpoint restriction*/
+    height: 750px;
+    background-color: orange;
+    
+    border: 1px solid black;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+}
