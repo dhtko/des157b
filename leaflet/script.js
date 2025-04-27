@@ -4,7 +4,7 @@
     // add your script here
     
     //setting up map
-    const map = L.map('map').setView([51.505, -0.09], 13); //x cord, y cord, zoom in/out
+    const map = L.map('map').setView([49.1880, -122.7988], 16); //x cord, y cord, zoom in/out
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -15,29 +15,26 @@
 
 
     //adding visual objects (marker, circle, polygon)
-    const marker = L.marker([51.5, -0.09]).addTo(map);
+    const townCentre = L.marker([49.189633, -122.803820]).addTo(map);
 
-    const circle = L.circle([51.508, -0.11], {
-        color: 'red',
-        fillColor: '#f03',
+    const marker2 = L.marker([49.191775, -122.796488]).addTo(map);
+
+    const park = L.circle([49.188960, -122.793462], {
+        color: 'green',
+        fillColor: '#a1d4ae',
         fillOpacity: 0.5,
-        radius: 500
+        radius: 180
     }).addTo(map);
-
-    const polygon = L.polygon([
-        [51.509, -0.08],
-        [51.503, -0.06],
-        [51.51, -0.047]
-    ]).addTo(map);
     //adding visual objects (marker, circle, polygon)
 
 
     //adding popup
-    marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-    circle.bindPopup("I am a circle.");
-    polygon.bindPopup("I am a polygon."); //adding popup directly to the visual objects
+    townCentre.bindPopup("<b>Guildford Town Centre</b><br>The go-to place for hangouts").openPopup();
+    marker2.bindPopup("<b>Hannam Supermarket</b><br>My first work.");
+    park.bindPopup("<b>Guildford Heights Park</b><br>A peaceful park for my morning run"); 
+    //adding popup directly to the visual objects
 
-    
+
 
 
 
