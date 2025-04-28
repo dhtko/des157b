@@ -139,8 +139,8 @@ main{
 
 #dataBar1{
     position: absolute;
-    top: 22.7%;
-    left: 6.8%;
+    top: 22.7%; 
+    left: 6.8%; 
 
     z-index: 0;
 }
