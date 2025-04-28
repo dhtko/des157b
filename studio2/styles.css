@@ -73,13 +73,13 @@ main{
 
     z-index: 1;
 }
-#thePoint{
+.thePoint{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
-#thePoint p{
+.thePoint p{
     writing-mode: vertical-lr;
 
     font-family: "Montserrat";
@@ -127,7 +127,7 @@ main{
     align-items: baseline;
     
     position: absolute;
-    top: 21%;
+    top: 21.3%;
     left: 6.8%;
 
     z-index: 0;
