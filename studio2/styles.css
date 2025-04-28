@@ -124,23 +124,109 @@ main{
 #dataBarGroup{
     display: flex;
     gap: 38px;
+    align-items: baseline;
     
     position: absolute;
-    top: 40%;
+    top: 21%;
     left: 6.8%;
 
     z-index: 0;
 }
-#dataBar{
+.dataBar{
     width: 40px;
 }
-#outerBar1{
+.outerBar{
     background-color: rgb(49, 42, 42);
-    height: 30px;
+    /*height: 30px;*/
     width: 20px;
 }
-#innerBar1{
+.innerBar{
     background-color: rgb(217, 164, 29);
-    height: 70px;
+    /*height: 70px;*/
     width: 20px;
+}
+
+#outBar1{
+    height: 145px;
+}
+#inBar1{
+    height: 73px;
+}
+#outBar2{
+    height: 0px;
+}
+#inBar2{
+    height: 108px;
+}
+#outBar3{
+    height: 84px;
+}
+#inBar3{
+    height: 48px;
+}
+#outBar4{
+    height: 121px;
+}
+#inBar4{
+    height: 73px;
+}
+#outBar5{
+    height: 85px;
+}
+#inBar5{
+    height: 61px;
+}
+#outBar6{
+    height: 73px;
+}
+#inBar6{
+    height: 48px;
+}
+#outBar7{
+    height: 109px;
+}
+#inBar7{
+    height: 73px;
+}
+#outBar8{
+    height: 97px;
+}
+#inBar8{
+    height: 133px;
+}
+#outBar9{
+    height: 97px;
+}
+#inBar9{
+    height: 48px;
+}
+#outBar10{
+    height: 121px;
+}
+#inBar10{
+    height: 36px;
+}
+#outBar11{
+    height: 145px;
+}
+#inBar11{
+    height: 61px;
+}
+#outBar12{
+    height: 73px;
+}
+#inBar12{
+    height: 61px;
+}
+#outBar13{
+    height: 145px;
+}
+#inBar13{
+    height: 73px;
+}
+#outBar14{
+    height: 97px;
+}
+#inBar14{
+    height: 24px;
 }
