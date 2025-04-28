@@ -136,13 +136,12 @@ main{
     width: 40px;
 }
 .outerBar{
-    background-color: rgb(49, 42, 42);
-    /*height: 30px;*/
+    background-color: rgba(49, 49, 49, 0.292);
+    border-radius: 10px 10px 0 0;
     width: 20px;
 }
 .innerBar{
-    background-color: rgb(217, 164, 29);
-    /*height: 70px;*/
+    background-color: rgb(162, 253, 113);
     width: 20px;
 }
 
