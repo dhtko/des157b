@@ -32,6 +32,20 @@ header{
     padding: 0px;
     text-align: center;
 }
+h1{
+    margin: 5px 0 0 0;
+    padding: 0;
+
+    font-family: "Permanent Marker";
+    font-size: 55px;
+}
+h2{
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    font-family: "Jua";
+    font-size: 30px;
+}
 
 main{
     display: flex;
@@ -41,7 +55,7 @@ main{
 }
 #barGraph{
     width: 1100px;
-    height: 250px;
+    height: 265px;
 }
 #centerBar{
     width: 1100px;
@@ -55,7 +69,9 @@ main{
 
     position: absolute;
     top: 51.5%;
-    left: 4.7%;
+    left: 5%;
+
+    z-index: 1;
 }
 #thePoint{
     display: flex;
@@ -65,7 +81,11 @@ main{
 }
 #thePoint p{
     writing-mode: vertical-lr;
+
+    font-family: "Montserrat";
     font-size: 20px;
+
+    color: rgb(30, 242, 41);
 }
 .rotateTxt{
     transform: rotate(90deg);
@@ -79,10 +99,19 @@ main{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
     margin: 40px 0 0 0;
-    padding: 20px;    
+    padding: 20px;
+    
+    text-align: center;
 
     position: absolute;
     bottom: 5%;
+}
+#detailStat p{
+    margin: 0;
+    padding: 0;
+
+    font-family: "DM Sans";
+    font-size: 20px;
 }
 
 .ball{
@@ -92,4 +121,26 @@ main{
     background-color: rgb(165, 250, 186);
 }
 
+#dataBarGroup{
+    display: flex;
+    gap: 38px;
+    
+    position: absolute;
+    top: 40%;
+    left: 6.8%;
 
+    z-index: 0;
+}
+#dataBar{
+    width: 40px;
+}
+#outerBar1{
+    background-color: rgb(49, 42, 42);
+    height: 30px;
+    width: 20px;
+}
+#innerBar1{
+    background-color: rgb(217, 164, 29);
+    height: 70px;
+    width: 20px;
+}
