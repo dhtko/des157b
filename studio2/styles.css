@@ -121,17 +121,7 @@ main{
     background-color: rgb(165, 250, 186);
 }
 
-#dataBarGroup{
-    display: flex;
-    gap: 38px;
-    align-items: baseline;
-    
-    position: absolute;
-    top: 21.3%;
-    left: 6.8%;
 
-    z-index: 0;
-}
 .dataBar{
     width: 40px;
 }
@@ -145,87 +135,194 @@ main{
     width: 20px;
 }
 
+
+
+#dataBar1{
+    position: absolute;
+    top: 22.7%;
+    left: 6.8%;
+
+    z-index: 0;
+}
+#dataBar2{
+    position: absolute;
+    top: 38%;
+    left: 13.3%;
+
+    z-index: 0;
+}
+#dataBar3{
+    position: absolute;
+    top: 35%;
+    left: 19.8%;
+
+    z-index: 0;
+}
+#dataBar4{
+    position: absolute;
+    top: 26%;
+    left: 26.3%;
+
+    z-index: 0;
+}
+#dataBar5{
+    position: absolute;
+    top: 33%;
+    left: 32.8%;
+
+    z-index: 0;
+}
+#dataBar6{
+    position: absolute;
+    top: 36%;
+    left: 39.3%;
+
+    z-index: 0;
+}
+#dataBar7{
+    position: absolute;
+    top: 29%;
+    left: 45.8%;
+
+    z-index: 0;
+}
+#dataBar8{
+    position: absolute;
+    top: 22%;
+    left: 52.3%;
+
+    z-index: 0;
+}
+#dataBar9{
+    position: absolute;
+    top: 33%;
+    left: 58.8%;
+
+    z-index: 0;
+}
+#dataBar10{
+    position: absolute;
+    top: 31%;
+    left: 65.3%;
+
+    z-index: 0;
+}
+#dataBar11{
+    position: absolute;
+    top: 26%;
+    left: 71.7%;
+
+    z-index: 0;
+}
+#dataBar12{
+    position: absolute;
+    top: 35%;
+    left: 78.2%;
+
+    z-index: 0;
+}
+#dataBar13{
+    position: absolute;
+    top: 24%;
+    left: 84.7%;
+
+    z-index: 0;
+}
+#dataBar14{
+    position: absolute;
+    top: 36%;
+    left: 91.2%;
+
+    z-index: 0;
+}
+
+
+
+
+
+
+
 #outBar1{
-    height: 145px;
+    height: 0px;
 }
 #inBar1{
-    height: 73px;
+    height: 0px;
 }
 #outBar2{
     height: 0px;
 }
 #inBar2{
-    height: 108px;
+    height: 0px;
 }
 #outBar3{
-    height: 84px;
+    height: 0px;
 }
 #inBar3{
-    height: 48px;
+    height: 0px;
 }
 #outBar4{
-    height: 121px;
+    height: 0px;
 }
 #inBar4{
-    height: 73px;
+    height: 0px;
 }
 #outBar5{
-    height: 85px;
+    height: 0px;
 }
 #inBar5{
-    height: 61px;
+    height: 0px;
 }
 #outBar6{
-    height: 73px;
+    height: 0px;
 }
 #inBar6{
-    height: 48px;
+    height: 0px;
 }
 #outBar7{
-    height: 109px;
+    height: 0px;
 }
 #inBar7{
-    height: 73px;
+    height: 0px;
 }
 #outBar8{
-    height: 97px;
+    height: 0px;
 }
 #inBar8{
-    height: 133px;
+    height: 0px;
 }
 #outBar9{
-    height: 97px;
+    height: 0px;
 }
 #inBar9{
-    height: 48px;
+    height: 0px;
 }
 #outBar10{
-    height: 121px;
+    height: 0px;
 }
 #inBar10{
-    height: 36px;
+    height: 0px;
 }
 #outBar11{
-    height: 145px;
+    height: 0px;
 }
 #inBar11{
-    height: 61px;
+    height: 0px;
 }
 #outBar12{
-    height: 73px;
+    height: 0px;
 }
 #inBar12{
-    height: 61px;
+    height: 0px;
 }
 #outBar13{
-    height: 145px;
+    height: 0px;
 }
 #inBar13{
-    height: 73px;
+    height: 0px;
 }
 #outBar14{
-    height: 97px;
+    height: 0px;
 }
 #inBar14{
-    height: 24px;
+    height: 0px;
 }

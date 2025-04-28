@@ -24,6 +24,35 @@
     const circle13 = document.querySelector('#ball13');
     const circle14 = document.querySelector('#ball14');
 
+    const outBar1 = document.querySelector('#outBar1');
+    const outBar2 = document.querySelector('#outBar2');
+    const outBar3 = document.querySelector('#outBar3');
+    const outBar4 = document.querySelector('#outBar4');
+    const outBar5 = document.querySelector('#outBar5');
+    const outBar6 = document.querySelector('#outBar6');
+    const outBar7 = document.querySelector('#outBar7');
+    const outBar8 = document.querySelector('#outBar8');
+    const outBar9 = document.querySelector('#outBar9');
+    const outBar10 = document.querySelector('#outBar10');
+    const outBar11 = document.querySelector('#outBar11');
+    const outBar12 = document.querySelector('#outBar12');
+    const outBar13 = document.querySelector('#outBar13');
+    const outBar14 = document.querySelector('#outBar14');
+    
+    const inBar1 = document.querySelector('#inBar1');
+    const inBar2 = document.querySelector('#inBar2');
+    const inBar3 = document.querySelector('#inBar3');
+    const inBar4 = document.querySelector('#inBar4');
+    const inBar5 = document.querySelector('#inBar5');
+    const inBar6 = document.querySelector('#inBar6');
+    const inBar7 = document.querySelector('#inBar7');
+    const inBar8 = document.querySelector('#inBar8');
+    const inBar9 = document.querySelector('#inBar9');
+    const inBar10 = document.querySelector('#inBar10');
+    const inBar11 = document.querySelector('#inBar11');
+    const inBar12 = document.querySelector('#inBar12');
+    const inBar13 = document.querySelector('#inBar13');
+    const inBar14 = document.querySelector('#inBar14');
 
     async function getData(){
         const matchHistory = await fetch('./data.json');
@@ -109,6 +138,48 @@
         dateData.innerHTML = '?';
         gameData.innerHTML = '?';
         top4Data.innerHTML = '?';
+
+        outBar1.style.height = '0px';
+        inBar1.style.height = '0px';
+
+        outBar2.style.height = '0px';
+        inBar2.style.height = '0px';
+        
+        outBar3.style.height = '0px';
+        inBar3.style.height = '0px';
+        
+        outBar4.style.height = '0px';
+        inBar4.style.height = '0px';
+
+        outBar5.style.height = '0px';
+        inBar5.style.height = '0px';
+
+        outBar6.style.height = '0px';
+        inBar6.style.height = '0px';
+
+        outBar7.style.height = '0px';
+        inBar7.style.height = '0px';
+
+        outBar8.style.height = '0px';
+        inBar8.style.height = '0px';
+
+        outBar9.style.height = '0px';
+        inBar9.style.height = '0px';
+
+        outBar10.style.height = '0px';
+        inBar10.style.height = '0px';
+
+        outBar11.style.height = '0px';
+        inBar11.style.height = '0px';
+
+        outBar12.style.height = '0px';
+        inBar12.style.height = '0px';
+
+        outBar13.style.height = '0px';
+        inBar13.style.height = '0px';
+
+        outBar14.style.height = '0px';
+        inBar14.style.height = '0px';
     }
 
 
@@ -116,6 +187,8 @@
 
     circle1.addEventListener('mouseover', function(){
         output1(globalData);
+        outBar1.style.height = '145px';
+        inBar1.style.height = '73px';
     });
     circle1.addEventListener('mouseout', function(){
         defaultData();
@@ -123,6 +196,8 @@
 
     circle2.addEventListener('mouseover', function(){
         output2(globalData);
+        outBar2.style.height = '0px';
+        inBar2.style.height = '108px';
     });
     circle2.addEventListener('mouseout', function(){
         defaultData();
@@ -130,6 +205,8 @@
 
     circle3.addEventListener('mouseover', function(){
         output3(globalData);
+        outBar3.style.height = '84px';
+        inBar3.style.height = '48px';
     });
     circle3.addEventListener('mouseout', function(){
         defaultData();
@@ -137,6 +214,8 @@
 
     circle4.addEventListener('mouseover', function(){
         output4(globalData);
+        outBar4.style.height = '121px';
+        inBar4.style.height = '73px';
     });
     circle4.addEventListener('mouseout', function(){
         defaultData();
@@ -144,6 +223,8 @@
 
     circle5.addEventListener('mouseover', function(){
         output5(globalData);
+        outBar5.style.height = '85px';
+        inBar5.style.height = '61px';
     });
     circle5.addEventListener('mouseout', function(){
         defaultData();
@@ -151,6 +232,8 @@
 
     circle6.addEventListener('mouseover', function(){
         output6(globalData);
+        outBar6.style.height = '73px';
+        inBar6.style.height = '48px';
     });
     circle6.addEventListener('mouseout', function(){
         defaultData();
@@ -158,6 +241,8 @@
     
     circle7.addEventListener('mouseover', function(){
         output7(globalData);
+        outBar7.style.height = '109px';
+        inBar7.style.height = '73px';
     });
     circle7.addEventListener('mouseout', function(){
         defaultData();
@@ -165,6 +250,8 @@
     
     circle8.addEventListener('mouseover', function(){
         output8(globalData);
+        outBar8.style.height = '97px';
+        inBar8.style.height = '133px';
     });
     circle8.addEventListener('mouseout', function(){
         defaultData();
@@ -172,6 +259,8 @@
     
     circle9.addEventListener('mouseover', function(){
         output9(globalData);
+        outBar9.style.height = '97px';
+        inBar9.style.height = '48px';
     });
     circle9.addEventListener('mouseout', function(){
         defaultData();
@@ -179,6 +268,8 @@
 
     circle10.addEventListener('mouseover', function(){
         output10(globalData);
+        outBar10.style.height = '121px';
+        inBar10.style.height = '36px';
     });
     circle10.addEventListener('mouseout', function(){
         defaultData();
@@ -186,6 +277,8 @@
 
     circle11.addEventListener('mouseover', function(){
         output11(globalData);
+        outBar11.style.height = '145px';
+        inBar11.style.height = '61px';
     });
     circle11.addEventListener('mouseout', function(){
         defaultData();
@@ -193,6 +286,8 @@
 
     circle12.addEventListener('mouseover', function(){
         output12(globalData);
+        outBar12.style.height = '73px';
+        inBar12.style.height = '61px';
     });
     circle12.addEventListener('mouseout', function(){
         defaultData();
@@ -200,6 +295,8 @@
 
     circle13.addEventListener('mouseover', function(){
         output13(globalData);
+        outBar13.style.height = '145px';
+        inBar13.style.height = '73px';
     });
     circle13.addEventListener('mouseout', function(){
         defaultData();
@@ -207,6 +304,8 @@
 
     circle14.addEventListener('mouseover', function(){
         output14(globalData);
+        outBar14.style.height = '97px';
+        inBar14.style.height = '24px';
     });
     circle14.addEventListener('mouseout', function(){
         defaultData();
