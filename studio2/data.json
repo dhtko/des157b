@@ -1,72 +1,72 @@
-[
-    {
+{
+    "point14" : {
         "Date": "2024/06/04",
-        "Number of Games": 8,
-        "Number of Wins": 2
+        "Games": 8,
+        "Wins": 2
     },
-    {
+    "point13" : {
         "Date": "2024/05/18",
-        "Number of Games": 12,
-        "Number of Wins": 6
+        "Games": 12,
+        "Wins": 6
     },
-    {
+    "point12" : {
         "Date": "2024/05/15",
-        "Number of Games": 6,
-        "Number of Wins": 5
+        "Games": 6,
+        "Wins": 5
     },
-    {
+    "point11" : {
         "Date": "2024/05/12",
-        "Number of Games": 12,
-        "Number of Wins": 5
+        "Games": 12,
+        "Wins": 5
     },
-    {
+    "point10" : {
         "Date": "2024/05/11",
-        "Number of Games": 10,
-        "Number of Wins": 3
+        "Games": 10,
+        "Wins": 3
     },
-    {
+    "point9" : {
         "Date": "2024/05/10",
-        "Number of Games": 8,
-        "Number of Wins": 4
+        "Games": 8,
+        "Wins": 4
     },
-    {
+    "point8" : {
         "Date": "2024/05/07",
-        "Number of Games": 19,
-        "Number of Wins": 11
+        "Games": 19,
+        "Wins": 11
     },
-    {
+    "point7" : {
         "Date": "2024/05/06",
-        "Number of Games": 9,
-        "Number of Wins": 6
+        "Games": 9,
+        "Wins": 6
     },
-    {
+    "point6" : {
         "Date": "2024/04/17",
-        "Number of Games": 6,
-        "Number of Wins": 4
+        "Games": 6,
+        "Wins": 4
     },
-    {
+    "point5" : {
         "Date": "2024/04/07",
-        "Number of Games": 7,
-        "Number of Wins": 5
+        "Games": 7,
+        "Wins": 5
     },
-    {
+    "point4" : {
         "Date": "2024/03/31",
-        "Number of Games": 10,
-        "Number of Wins": 6
+        "Games": 10,
+        "Wins": 6
     },
-    {
+    "point3" : {
         "Date": "2024/03/29",
-        "Number of Games": 7,
-        "Number of Wins": 4
+        "Games": 7,
+        "Wins": 4
     },
-    {
+    "point2" : {
         "Date": "2024/03/24",
-        "Number of Games": 9,
-        "Number of Wins": 9
+        "Games": 9,
+        "Wins": 9
     },
-    {
+    "point1" : {
         "Date": "2024/03/23",
-        "Number of Games": 12,
-        "Number of Wins": 6
+        "Games": 12,
+        "Wins": 6
     }
-]
+}
