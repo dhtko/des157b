@@ -15,8 +15,8 @@ body{
 #container{
     box-sizing: border-box; /*make sure to center the content*/
     
-    width: 1200px; /*viewpoint restriction*/
-    height: 750px;
+    width: 1100px; /*viewpoint restriction*/
+    height: 700px;
     background: #449c35;
     background: linear-gradient(180deg, rgba(68, 156, 53, 1) 0%, rgba(61, 168, 104, 1) 50%, rgba(30, 66, 22, 1) 100%);
     border-radius: 20px;
@@ -55,20 +55,20 @@ main{
 }
 #barGraph{
     width: 1100px;
-    height: 265px;
+    height: 245px;
 }
 #centerBar{
-    width: 1100px;
+    width: 1000px;
     height: 15px;
     background-color: rgb(22, 70, 43);
     border-radius: 20px;
 }
 #dayDate{
     display: flex;
-    gap: 15px;
+    gap: 8px;
 
     position: absolute;
-    top: 51.5%;
+    top: 52%;
     left: 5%;
 
     z-index: 1;
@@ -93,7 +93,7 @@ main{
 }
 
 #detailStat{
-    background-color: rgb(121, 230, 121);
+    background-color: rgb(165, 250, 186);
     width: 300px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -113,6 +113,10 @@ main{
     font-family: "DM Sans";
     font-size: 20px;
 }
+#detailStat em{
+    font-family: "Lato";
+}
+
 
 .ball{
     width: 40px;
@@ -136,109 +140,104 @@ main{
 }
 
 
-
 #dataBar1{
     position: absolute;
-    top: 22.7%; 
-    left: 6.8%; 
+    top: 32%;
+    left: 7%;
 
     z-index: 0;
 }
 #dataBar2{
     position: absolute;
     top: 38%;
-    left: 13.3%;
+    left: 13.4%;
 
     z-index: 0;
 }
 #dataBar3{
     position: absolute;
-    top: 35%;
-    left: 19.8%;
+    top: 41%;
+    left: 19.9%;
 
     z-index: 0;
 }
 #dataBar4{
     position: absolute;
-    top: 26%;
+    top: 36%;
     left: 26.3%;
 
     z-index: 0;
 }
 #dataBar5{
     position: absolute;
-    top: 33%;
+    top: 41%;
     left: 32.8%;
 
     z-index: 0;
 }
 #dataBar6{
     position: absolute;
-    top: 36%;
-    left: 39.3%;
+    top: 43%;
+    left: 39.2%;
 
     z-index: 0;
 }
 #dataBar7{
     position: absolute;
-    top: 29%;
-    left: 45.8%;
+    top: 37%;
+    left: 45.7%;
 
     z-index: 0;
 }
 #dataBar8{
     position: absolute;
     top: 22%;
-    left: 52.3%;
+    left: 52.2%;
 
     z-index: 0;
 }
 #dataBar9{
     position: absolute;
-    top: 33%;
-    left: 58.8%;
+    top: 39%;
+    left: 58.6%;
 
     z-index: 0;
 }
 #dataBar10{
     position: absolute;
-    top: 31%;
-    left: 65.3%;
+    top: 36%;
+    left: 65.1%;
 
     z-index: 0;
 }
 #dataBar11{
     position: absolute;
-    top: 26%;
-    left: 71.7%;
+    top: 32%;
+    left: 71.5%;
 
     z-index: 0;
 }
 #dataBar12{
     position: absolute;
-    top: 35%;
-    left: 78.2%;
+    top: 42%;
+    left: 78%;
 
     z-index: 0;
 }
 #dataBar13{
     position: absolute;
-    top: 24%;
-    left: 84.7%;
+    top: 32%;
+    left: 84.4%;
 
     z-index: 0;
 }
 #dataBar14{
     position: absolute;
-    top: 36%;
-    left: 91.2%;
+    top: 39%;
+    left: 90.8%;
 
     z-index: 0;
 }
-
-
-
-
 
 
 

@@ -9,6 +9,8 @@
     const gameData = document.querySelector('#gameData');
     const top4Data = document.querySelector('#top4Data');
 
+    const detailStat = document.querySelector('#detailStat');
+
     const circle1 = document.querySelector('#ball1');
     const circle2 = document.querySelector('#ball2');
     const circle3 = document.querySelector('#ball3');
@@ -139,6 +141,23 @@
         gameData.innerHTML = '?';
         top4Data.innerHTML = '?';
 
+        detailStat.style.backgroundColor = 'rgb(165, 250, 186)';
+        
+        circle1.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle2.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle3.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle4.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle5.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle6.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle7.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle8.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle9.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle10.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle11.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle12.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle13.style.backgroundColor = 'rgb(165, 250, 186)';
+        circle14.style.backgroundColor = 'rgb(165, 250, 186)';
+
         outBar1.style.height = '0px';
         inBar1.style.height = '0px';
 
@@ -187,8 +206,10 @@
 
     circle1.addEventListener('mouseover', function(){
         output1(globalData);
-        outBar1.style.height = '145px';
+        outBar1.style.height = '73px';
         inBar1.style.height = '73px';
+        circle1.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle1.addEventListener('mouseout', function(){
         defaultData();
@@ -198,6 +219,8 @@
         output2(globalData);
         outBar2.style.height = '0px';
         inBar2.style.height = '108px';
+        circle2.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle2.addEventListener('mouseout', function(){
         defaultData();
@@ -205,8 +228,10 @@
 
     circle3.addEventListener('mouseover', function(){
         output3(globalData);
-        outBar3.style.height = '84px';
+        outBar3.style.height = '36px';
         inBar3.style.height = '48px';
+        circle3.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle3.addEventListener('mouseout', function(){
         defaultData();
@@ -214,8 +239,10 @@
 
     circle4.addEventListener('mouseover', function(){
         output4(globalData);
-        outBar4.style.height = '121px';
+        outBar4.style.height = '48px';
         inBar4.style.height = '73px';
+        circle4.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle4.addEventListener('mouseout', function(){
         defaultData();
@@ -223,8 +250,10 @@
 
     circle5.addEventListener('mouseover', function(){
         output5(globalData);
-        outBar5.style.height = '85px';
+        outBar5.style.height = '24px';
         inBar5.style.height = '61px';
+        circle5.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle5.addEventListener('mouseout', function(){
         defaultData();
@@ -232,8 +261,10 @@
 
     circle6.addEventListener('mouseover', function(){
         output6(globalData);
-        outBar6.style.height = '73px';
+        outBar6.style.height = '24px';
         inBar6.style.height = '48px';
+        circle6.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle6.addEventListener('mouseout', function(){
         defaultData();
@@ -241,8 +272,10 @@
     
     circle7.addEventListener('mouseover', function(){
         output7(globalData);
-        outBar7.style.height = '109px';
+        outBar7.style.height = '36px';
         inBar7.style.height = '73px';
+        circle7.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle7.addEventListener('mouseout', function(){
         defaultData();
@@ -252,6 +285,8 @@
         output8(globalData);
         outBar8.style.height = '97px';
         inBar8.style.height = '133px';
+        circle8.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle8.addEventListener('mouseout', function(){
         defaultData();
@@ -259,8 +294,10 @@
     
     circle9.addEventListener('mouseover', function(){
         output9(globalData);
-        outBar9.style.height = '97px';
+        outBar9.style.height = '48px';
         inBar9.style.height = '48px';
+        circle9.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle9.addEventListener('mouseout', function(){
         defaultData();
@@ -268,8 +305,10 @@
 
     circle10.addEventListener('mouseover', function(){
         output10(globalData);
-        outBar10.style.height = '121px';
+        outBar10.style.height = '85px';
         inBar10.style.height = '36px';
+        circle10.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle10.addEventListener('mouseout', function(){
         defaultData();
@@ -277,8 +316,10 @@
 
     circle11.addEventListener('mouseover', function(){
         output11(globalData);
-        outBar11.style.height = '145px';
+        outBar11.style.height = '85px';
         inBar11.style.height = '61px';
+        circle11.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle11.addEventListener('mouseout', function(){
         defaultData();
@@ -286,8 +327,10 @@
 
     circle12.addEventListener('mouseover', function(){
         output12(globalData);
-        outBar12.style.height = '73px';
+        outBar12.style.height = '12px';
         inBar12.style.height = '61px';
+        circle12.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle12.addEventListener('mouseout', function(){
         defaultData();
@@ -295,8 +338,10 @@
 
     circle13.addEventListener('mouseover', function(){
         output13(globalData);
-        outBar13.style.height = '145px';
+        outBar13.style.height = '73px';
         inBar13.style.height = '73px';
+        circle13.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle13.addEventListener('mouseout', function(){
         defaultData();
@@ -304,8 +349,10 @@
 
     circle14.addEventListener('mouseover', function(){
         output14(globalData);
-        outBar14.style.height = '97px';
+        outBar14.style.height = '73px';
         inBar14.style.height = '24px';
+        circle14.style.backgroundColor = 'rgb(121,230,121)';
+        detailStat.style.backgroundColor = 'rgb(121,230,121)';
     });
     circle14.addEventListener('mouseout', function(){
         defaultData();
