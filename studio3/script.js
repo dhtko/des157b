@@ -3,6 +3,9 @@
   
     console.log('loaded');
   
+    AOS.init();
+
+    
     const granimInstance = new Granim({
         element: '#gradient-canvas',
         direction: 'diagonal',
