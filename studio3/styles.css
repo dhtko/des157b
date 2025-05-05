@@ -1,3 +1,57 @@
+header{
+    text-align: center;
+    background-color: transparent;
+}
+
 body{
     background-color: bisque;
+
+    margin: 20px auto;
+    text-align: center;
+}
+#gradient-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+#circle{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    background-color: rgb(143, 46, 46);
+}
+section{
+    height: 100vh;
+    
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
+    text-align: center;
+    
+    background-color: white;
+    color: black;
+    
+    padding: 10px;
+    margin: 20px 0;
+    z-index: 1;
+}
+.content{
+    /*max-width: 600px;*/
+    width: 500px;
+}
+
+
+footer{
+    background-color: rgba(105, 105, 157, 0.601);
 }
