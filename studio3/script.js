@@ -5,7 +5,6 @@
   
     AOS.init();
 
-    
     const granimInstance = new Granim({
         element: '#gradient-canvas',
         direction: 'diagonal',
@@ -34,7 +33,6 @@
             }
         }
     });
-
     $('#default-state-cta').on('click', function(event){
         event.preventDefault();
         granimInstance.changeState('default-state');
@@ -50,11 +48,12 @@
         granimInstance.changeState('orange-state');
         setClass('#orange-state-cta');
     });
-
     function setClass(element){
         $('#toggleCircleGroup div').removeClass('active');
         $(element).addClass('active');
     }
+
+
 
   })();
   
