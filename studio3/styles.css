@@ -5,6 +5,7 @@ header{
 h1{
     font-family: 'DynaPuff';
     font-size: 55px;
+    color:#F2F2F2;
 }
 
 body{
@@ -35,21 +36,21 @@ body{
 #default-state-cta{
     width: 75px;
     height: 75px;
-    background-color: rgb(143, 46, 46);
+    background-color: #F2F2F2;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #violet-state-cta{
     width: 75px;
     height: 75px;
-    background-color: rgb(64, 54, 158);
+    background-color: #3DD7E8;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-#orange-state-cta{
+#green-state-cta{
     width: 75px;
     height: 75px;
-    background-color: rgb(19, 183, 104);
+    background-color: #ECF502;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -62,7 +63,7 @@ section{
     
     text-align: center;
     
-    background-color: white;
+    background-color: rgb(244, 244, 244);
     color: black;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;

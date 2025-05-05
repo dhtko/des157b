@@ -2,6 +2,8 @@
     'use strict';
   
     console.log('loaded');
+
+    const header = document.querySelector('h1');
   
     AOS.init();
 
@@ -12,24 +14,24 @@
         states: {
             "default-state": {
                 gradients: [
-                    ['#ff9966', '#ff5e62'],
-                    ['#00F260', '#0575E6'],
-                    ['#e1eec3', '#f05053']
+                    ['#FD1D1D', '#FCB045'],
+                    ['#FF6D33', '#DEC312'],
                 ],
                 transitionSpeed: 10000
             },
             "violet-state": {
                 gradients: [
-                    ['#9D50BB', '#6E48AA'], 
-                    ['#4776E6', '#8E54E9']
+                    ['#A8A8FF', '#090979'], 
+                    ['#6281F0', '#8C2222']
+                ],
+                transitionSpeed: 4000
+            },
+            "green-state": {
+                gradients: [
+                    ['#51C997', '#EDDD53'],
+                    ['#48DB63', '#1894BA']
                 ],
                 transitionSpeed: 2000
-            },
-            "orange-state": {
-                gradients: [
-                    ['#0f2027', '#203a43']
-                ],
-                transitionSpeed: 500
             }
         }
     });
@@ -37,16 +39,22 @@
         event.preventDefault();
         granimInstance.changeState('default-state');
         setClass('#default-state-cta');
+
+        header.style.color = '#F2F2F2';
     });
     $('#violet-state-cta').on('click', function(event){
         event.preventDefault();
         granimInstance.changeState('violet-state');
         setClass('#violet-state-cta');
+
+        header.style.color = '#3DD7E8';
     });
-    $('#orange-state-cta').on('click', function(event){
+    $('#green-state-cta').on('click', function(event){
         event.preventDefault();
-        granimInstance.changeState('orange-state');
-        setClass('#orange-state-cta');
+        granimInstance.changeState('green-state');
+        setClass('#green-state-cta');
+
+        header.style.color = '#ECF502';
     });
     function setClass(element){
         $('#toggleCircleGroup div').removeClass('active');
