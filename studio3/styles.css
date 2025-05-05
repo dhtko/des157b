@@ -18,20 +18,44 @@ body{
     height: 100vh;
     z-index: -1;
 }
-#circle{
+#toggleCircleGroup{
     position: fixed;
     top: 30px;
     right: 30px;
 
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    
+
+    
+}
+#default-state-cta{
     width: 75px;
     height: 75px;
+    background-color: rgb(143, 46, 46);
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
-    background-color: rgb(143, 46, 46);
+}
+#violet-state-cta{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(64, 54, 158);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#orange-state-cta{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(19, 183, 104);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 section{
-    height: 100vh;
+    /*height: 100vh;*/
+    height: 200px;
     
     display: flex;
     justify-self: center;
@@ -47,8 +71,14 @@ section{
     z-index: 1;
 }
 .content{
-    /*max-width: 600px;*/
-    width: 500px;
+    max-width: 600px;
+    width: 200px;
+}
+.content img{
+    margin-top: 10px;
+    width: 100px;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 
