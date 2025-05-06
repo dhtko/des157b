@@ -1,0 +1,40 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 20 auto;
+
+    background-color: #31473A;
+}
+
+header{
+    text-align: center;
+}
+h1{
+    font-family: 'Shippori Antique';
+    font-size: 40px;
+    color: #EDF4F2;
+}
+
+main{
+    align-self: center;
+    width: 900px;
+
+    background-color: #738363;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    padding: 20px;
+}
+main ul, main p{
+    font-family: 'Quicksand';
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #EDF4F2;
+}
+main ul{
+    margin: 0;
+}
+main p:nth-child(2){
+    margin-bottom: 5px;
+}
