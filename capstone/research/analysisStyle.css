@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 20 auto;
+
+    background-color: #58d58c;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    align-self: center;
+    width: 900px;
+    padding: 15px;
+
+    background-color: white;
+    border-radius: 20px;
+}
