@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     margin: 20 auto;
 
-    background-color: #58d58c;
+    background-color: #6B7A89;
 }
 header{
     text-align: center;
@@ -13,9 +13,31 @@ main{
     width: 900px;
 }
 section{
-    background-color: skyblue;
+    background-color: #675C5A;
     border-radius: 20px;
 
     padding: 15px;
     margin: 20px;
+}
+.screenshots{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+img{
+    width: 380px;
+}
+
+h1{
+    color: #CDBCA8;
+}
+h2{
+    color: #201E1F;
+}
+p{
+    color: #201E1F;
+}
+a{
+    text-decoration: none;
+    color: #6B7A89;
 }
