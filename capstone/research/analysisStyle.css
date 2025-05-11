@@ -5,16 +5,17 @@ body{
 
     background-color: #58d58c;
 }
-
 header{
     text-align: center;
 }
-
 main{
     align-self: center;
     width: 900px;
-    padding: 15px;
-
-    background-color: white;
+}
+section{
+    background-color: skyblue;
     border-radius: 20px;
+
+    padding: 15px;
+    margin: 20px;
 }
