@@ -1,3 +1,4 @@
+/*header*/
 header{
     height: 1130px;
     background-color: green;
@@ -11,6 +12,7 @@ h1{
     padding: 0px;
 }
 
+/*curveGraphInteraction*/
 #elaboration{
     height: 1130px;
     background-color: orange;
@@ -32,6 +34,7 @@ h1{
     padding: 0px;
 }
 
+/*largeNumberBigImpact*/
 #impactPoint{
     height: 565px;
     background-color: antiquewhite;
@@ -47,6 +50,7 @@ h1{
     justify-content: space-evenly;
 }
 
+/*bridgeSection*/
 #transition{
     height: 565px;
     background-color: rgb(217, 111, 111);
@@ -58,6 +62,7 @@ h1{
     justify-content: center;
 }
 
+/*productRelatedPage*/
 #productInfo{
     height: 2180px;
     background-color: darkcyan;
@@ -66,14 +71,71 @@ h1{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+
+    position: relative;
 }
 #productInfo h2{
     margin-top: 10px;
 }
 #productImg{
-    width: 1273px;
-    height: 650px;
-    background-color: aliceblue;
+    display: block;
+    width: 80%;
+}
+.hoverCircle{
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(132, 132, 132, 0.556);
+}
+#scanner{
+    position: absolute;
+    top: 9.5%;
+    left: 22%;
+}
+#display{
+    position: absolute;
+    top: 7%;
+    right: 22%;
+}
+#dispenseExit{
+    position: absolute;
+    top: 13%;
+    right: 38%;
+}
+#garbageDoor{
+    position: absolute;
+    top: 27%;
+    right: 29%;
+}
+.detailInfo{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#scannerDetail{
+    position: absolute;
+    top: 11%;
+    left: 24%;
+}
+#displayDetail{
+    position: absolute;
+    top: 8.5%;
+    right: 5%;
+}
+#dispenseExitDetail{
+    position: absolute;
+    top: 15%;
+    right: 21%;
+}
+#garbageDoorDetail{
+    position: absolute;
+    top: 28.5%;
+    right: 31%;
 }
 #interactiveDemo{
     width: 1528px;
@@ -84,6 +146,7 @@ h1{
     text-align: center;
 }
 
+/*pieChartSlideBarChange*/
 #productImpact{
     height: 1120px;
     background-color: dodgerblue;
@@ -114,6 +177,7 @@ h1{
     width: 1000px;
 }
 
+/*narrative*/
 #speculativeWorld{
     height: 1050px;
     background-color: mistyrose;
@@ -127,6 +191,32 @@ h1{
     width: 736px;
     height: 880px;
     background-color: rebeccapurple;
+
+    position: relative;
+}
+#before{
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 22.5px 41px 22.5px 0;
+   border-color: transparent #4852FF transparent transparent;
+   transform: rotate(0deg);
+
+   position: absolute;
+   top: 50%;
+   left: 3%;
+}
+#after{
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 22.5px 0 22.5px 41px;
+   border-color: transparent transparent transparent #4852FF;
+   transform: rotate(0deg);
+
+   position: absolute;
+   top: 50%;
+   right: 3%;
 }
 #narrativeText{
     width: 736px;
@@ -134,4 +224,18 @@ h1{
     background-color: lightcyan;
 
     padding: 20px;
+}
+
+/*onOFF*/
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s ease;
+}
+.showing{
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.2s ease;
 }
