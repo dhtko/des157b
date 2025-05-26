@@ -1,0 +1,137 @@
+header{
+    height: 1130px;
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+#elaboration{
+    height: 1130px;
+    background-color: orange;
+
+    padding: 30px 50px;
+
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    
+}
+#curveGraph{
+    width: 752px;
+    height: 752px;
+    background-color: rgb(204, 174, 120);
+}
+#elaboration h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+#impactPoint{
+    height: 565px;
+    background-color: antiquewhite;
+    
+    text-align: center;
+}
+#impactPoint h2{
+    margin: 0px;
+    padding: 0px;
+}
+#pointGroups{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#transition{
+    height: 565px;
+    background-color: rgb(217, 111, 111);
+    
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#productInfo{
+    height: 2180px;
+    background-color: darkcyan;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#productInfo h2{
+    margin-top: 10px;
+}
+#productImg{
+    width: 1273px;
+    height: 650px;
+    background-color: aliceblue;
+}
+#interactiveDemo{
+    width: 1528px;
+    height: 920px;
+    background-color: rgb(225, 140, 225);
+}
+#centerText{
+    text-align: center;
+}
+
+#productImpact{
+    height: 1120px;
+    background-color: dodgerblue;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    
+}
+#productImpact h2{
+    margin-top: 0px;
+}
+#pieCharts{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.circleChart{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(220, 204, 210);
+}
+#year{
+    width: 1000px;
+}
+
+#speculativeWorld{
+    height: 1050px;
+    background-color: mistyrose;
+    padding: 20px;
+
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+#slideshow{
+    width: 736px;
+    height: 880px;
+    background-color: rebeccapurple;
+}
+#narrativeText{
+    width: 736px;
+    height: 880px;
+    background-color: lightcyan;
+
+    padding: 20px;
+}
