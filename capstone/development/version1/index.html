@@ -16,6 +16,14 @@
     <link rel="shortcut icon" href="#">
 
     <title>CP Version 1</title>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Chart.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+
+    <!--custom JS-->
     <script src="./script.js" defer></script>
 </head>
 <body>
@@ -31,7 +39,9 @@
     <main>
         <section id="elaboration">
             
-            <div id="curveGraph"></div>
+            <div id="curveGraph">
+                <canvas id='myChart'></canvas>
+            </div>
 
             <div>
                 <h2>Graph + Interaction</h2>
@@ -112,9 +122,15 @@
             <h2>Check how much can we change our enviroment<br>if we start to eat our garbage!</h2>
 
             <div id="pieCharts">
-                <div class="circleChart"></div>
-                <div class="circleChart"></div>
-                <div class="circleChart"></div>
+                <div class="circleChart">
+                    <canvas id="doughnut1"></canvas>
+                </div>
+                <div class="circleChart">
+                    <canvas id="doughnut2"></canvas>
+                </div>
+                <div class="circleChart">
+                    <canvas id="doughnut3"></canvas>
+                </div>
             </div>
 
             <input type="range" id="year" name="year" min="2025" max="2070" step="1">

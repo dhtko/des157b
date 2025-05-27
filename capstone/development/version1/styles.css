@@ -57,9 +57,7 @@ h1{
     
 }
 #curveGraph{
-    width: 752px;
-    height: 752px;
-    background-color: rgb(204, 174, 120);
+    width: 1000px;
 }
 #elaboration h2{
     margin: 0px;
@@ -203,7 +201,6 @@ h1{
 .circleChart{
     width: 400px;
     height: 400px;
-    background-color: rgb(220, 204, 210);
 }
 #year{
     width: 1000px;

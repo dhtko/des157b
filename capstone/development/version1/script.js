@@ -22,6 +22,61 @@
     const centerText = document.querySelector('#centerText');
     let i = 0;
 
+    const ctx = document.querySelector('#myChart');
+
+    const doughnut1 = document.querySelector('#doughnut1');
+    const doughnut2 = document.querySelector('#doughnut2');
+    const doughnut3 = document.querySelector('#doughnut3');
+
+
+    //introHeader
+    introHeader.addEventListener('click', function(){
+        console.log(i);
+        const bagGroup = bags.length;
+
+        if (i < bagGroup){
+            document.querySelector(`#bag${i+1}`).className = 'garbageBag showing';
+            i++;
+        }
+        else{
+            centerText.className = 'showing';
+        }
+    });
+
+
+    //lineGraph
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+                {
+                    label: 'My First Dataset',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                },
+                {
+                    label: 'My Second Dataset',
+                    data: [23, 13, 66, 46, 55, 65, 80],
+                    fill: false,
+                    borderColor: 'rgb(248, 202, 19)',
+                    tension: 0.1
+                }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                beginAtZero: true
+            }
+        }
+        }
+    });
+
+   
+    //productInformation
     scannerCircle.addEventListener('click', function(){
         scannerDetailInfo.className = 'detailInfo showing'
     });
@@ -50,6 +105,70 @@
         garbageDoorDetailInfo.className = 'detailInfo hidden';
     });
 
+
+    //productImpact
+    new Chart(doughnut1, {
+        type: 'doughnut',
+        data: {
+            labels: ['red', 'orange', 'yellow'],
+            datasets: [
+                {
+                    label: 'First doughnut Chart',
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        'rgb(251, 44, 0)',
+                        'rgb(251, 122, 0)',
+                        'rgb(251, 210, 0)'
+                    ],
+                    hoverOffset: 4
+                }
+            ]
+
+        }
+    });
+
+    new Chart(doughnut2, {
+        type: 'doughnut',
+        data: {
+            labels: ['green', 'purple', 'orange', 'skyblue'],
+            datasets: [
+                {
+                    label: 'Second doughnut Chart',
+                    data: [300, 50, 100, 15],
+                    backgroundColor: [
+                        'rgb(0, 193, 50)',
+                        'rgb(128, 0, 193)',
+                        'rgb(251, 122, 0)',
+                        'rgb(73, 251, 239)'
+                    ],
+                    hoverOffset: 4
+                }
+            ]
+
+        }
+    });
+
+    new Chart(doughnut3, {
+        type: 'doughnut',
+        data: {
+            labels: ['yellow', 'blue'],
+            datasets: [
+                {
+                    label: 'Third doughnut Chart',
+                    data: [300, 500],
+                    backgroundColor: [
+                        'rgb(251, 210, 0)',
+                        'rgb(79, 73, 251)'
+                    ],
+                    hoverOffset: 4
+                }
+            ]
+
+        }
+    });
+
+
+    //narrativeSpeculativeWorld
     slideshowBefore.addEventListener('click', function(){
         slideshowImage.style.backgroundColor = getRandomRGB();
     });
@@ -62,18 +181,4 @@
         const b = Math.floor(Math.random() * 256);
         return `rgb(${r}, ${g}, ${b})`;             
     }
-
-    introHeader.addEventListener('click', function(){
-        console.log(i);
-        const bagGroup = bags.length;
-
-        if (i < bagGroup){
-            document.querySelector(`#bag${i+1}`).className = 'garbageBag showing';
-            i++;
-        }
-        else{
-            centerText.className = 'showing';
-        }
-    });
-
 })();
