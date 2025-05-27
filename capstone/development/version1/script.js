@@ -20,9 +20,10 @@
     const introHeader = document.querySelector('header');
     const bags = document.querySelectorAll('.garbageBag');
     const centerText = document.querySelector('#centerText');
-    let i = 0;
+    let counter = 0;
 
     const ctx = document.querySelector('#myChart');
+    const selectCountry = document.querySelector('#selectCountry');
 
     const doughnut1 = document.querySelector('#doughnut1');
     const doughnut2 = document.querySelector('#doughnut2');
@@ -31,12 +32,12 @@
 
     //introHeader
     introHeader.addEventListener('click', function(){
-        console.log(i);
+        console.log(counter);
         const bagGroup = bags.length;
 
-        if (i < bagGroup){
-            document.querySelector(`#bag${i+1}`).className = 'garbageBag showing';
-            i++;
+        if (counter < bagGroup){
+            document.querySelector(`#bag${counter+1}`).className = 'garbageBag showing';
+            counter++;
         }
         else{
             centerText.className = 'showing';
@@ -44,7 +45,7 @@
     });
 
 
-    //lineGraph
+    //recyclability+wasteProduction
     new Chart(ctx, {
         type: 'line',
         data: {
@@ -75,6 +76,18 @@
         }
     });
 
+
+    selectCountry.addEventListener('click', function(){
+        let selectElement = document.querySelector('#countries');
+        let output = selectElement.options[selectElement.selectedIndex].value;
+        console.log(output);
+
+        for (let i = 0; i < document.querySelector('#countries').length; i++){
+            if (output == document.querySelector('#countries')[i].value){
+                console.log(`Internal match: ${output} = ${document.querySelector('#countries')[i].value}`);
+            }
+        }
+    });
    
     //productInformation
     scannerCircle.addEventListener('click', function(){

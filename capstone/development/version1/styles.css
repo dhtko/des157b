@@ -58,10 +58,17 @@ h1{
 }
 #curveGraph{
     width: 1000px;
+
+    position: relative;
 }
 #elaboration h2{
     margin: 0px;
     padding: 0px;
+}
+#selectCountries{
+    position: absolute;
+    top: 4%;
+    right: 3%;
 }
 
 /*largeNumberBigImpact*/
@@ -94,7 +101,7 @@ h1{
 
 /*productRelatedPage*/
 #productInfo{
-    height: 2180px;
+    height: 1130px;
     background-color: darkcyan;
 
     display: flex;
@@ -167,18 +174,13 @@ h1{
     top: 28.5%;
     right: 31%;
 }
-#interactiveDemo{
-    width: 1528px;
-    height: 920px;
-    background-color: rgb(225, 140, 225);
-}
 #centerText{
     text-align: center;
 }
 
 /*pieChartSlideBarChange*/
 #productImpact{
-    height: 1120px;
+    height: 1000px;
     background-color: dodgerblue;
 
     text-align: center;
