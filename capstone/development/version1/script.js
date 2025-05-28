@@ -3,6 +3,8 @@
 
     console.log('loaded');
 
+    let globalData;
+
     const scannerCircle = document.querySelector('#scanner');
     const displayCircle = document.querySelector('#display');
     const dispenseExitCircle = document.querySelector('#dispenseExit');
@@ -28,6 +30,7 @@
     const doughnut1 = document.querySelector('#doughnut1');
     const doughnut2 = document.querySelector('#doughnut2');
     const doughnut3 = document.querySelector('#doughnut3');
+    let yearRaw = document.querySelector('#year');
 
 
     //introHeader
@@ -45,8 +48,12 @@
     });
 
 
-    //recyclability+wasteProduction
-    new Chart(ctx, {
+    //recyclability+wasteProduction    
+    const test1 = [43, 87, 29, 64, 51, 76, 38];
+    const test2 = [92, 57, 33, 68, 74, 85, 46];
+    const test3 = [61, 48, 77, 95, 36, 59, 82];
+
+    let theWasteData = {
         type: 'line',
         data: {
             labels: ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July'],
@@ -71,24 +78,66 @@
             scales: {
                 y: {
                 beginAtZero: true
+                }
             }
         }
-        }
-    });
+    }
+    let lineGraph = new Chart(ctx, theWasteData);
+    //console.log(lineGraph.data.datasets[0].data[0]);
 
+    async function getData(){
+        const totalData = await fetch('./data.json');
+        const data = await totalData.json();
+        //console.log(data);
+
+        globalData = data;
+    }
+    getData();
 
     selectCountry.addEventListener('click', function(){
         let selectElement = document.querySelector('#countries');
         let output = selectElement.options[selectElement.selectedIndex].value;
-        console.log(output);
+        //console.log(output);
 
         for (let i = 0; i < document.querySelector('#countries').length; i++){
             if (output == document.querySelector('#countries')[i].value){
-                console.log(`Internal match: ${output} = ${document.querySelector('#countries')[i].value}`);
+                //console.log(`Internal match: ${output} = ${document.querySelector('#countries')[i].value}`);
+                updateValue(output);
             }
         }
+
+        lineGraph.update();
     });
+    function updateValue(name){
+        if (name == 'US'){
+            const americaWasteData = globalData.america.wasteMass;
+            const americaRecycleData = globalData.america.recycleability;
+            for (let j = 0; j < test1.length; j++){
+                lineGraph.data.datasets[0].data[j] = americaWasteData[j];
+                lineGraph.data.datasets[1].data[j] = americaRecycleData[j];
+            }
+        }
+
+        else if (name == 'CN'){
+            const chinaWasteData = globalData.china.wasteMass;
+            const chinaRecycleData = globalData.china.recycleability;
+            for (let j = 0; j < test2.length; j++){
+                lineGraph.data.datasets[0].data[j] = chinaWasteData[j];
+                lineGraph.data.datasets[1].data[j] = chinaRecycleData[j];
+            }
+        }
+
+        else if (name == 'RU'){
+            const russiaWasteData = globalData.russia.wasteMass;
+            const russiaRecycleData = globalData.russia.recycleability;
+            for (let j = 0; j < test3.length; j++){
+                lineGraph.data.datasets[0].data[j] = russiaWasteData[j];
+                lineGraph.data.datasets[1].data[j] = russiaRecycleData[j];
+            }
+        }
+    }
    
+
     //productInformation
     scannerCircle.addEventListener('click', function(){
         scannerDetailInfo.className = 'detailInfo showing'
@@ -139,7 +188,6 @@
 
         }
     });
-
     new Chart(doughnut2, {
         type: 'doughnut',
         data: {
@@ -160,7 +208,6 @@
 
         }
     });
-
     new Chart(doughnut3, {
         type: 'doughnut',
         data: {
@@ -179,6 +226,11 @@
 
         }
     });
+    
+    console.log(yearRaw.value);
+    console.log(yearRaw.max);
+    console.log(yearRaw.min);
+
 
 
     //narrativeSpeculativeWorld
