@@ -109,7 +109,7 @@
         if (name == 'US'){
             const americaWasteData = globalData.america.wasteMass;
             const americaRecycleData = globalData.america.recycleability;
-            for (let j = 0; j < test1.length; j++){
+            for (let j = 0; j < americaWasteData.length; j++){
                 lineGraph.data.datasets[0].data[j] = americaWasteData[j];
                 lineGraph.data.datasets[1].data[j] = americaRecycleData[j];
             }
@@ -118,7 +118,7 @@
         else if (name == 'CN'){
             const chinaWasteData = globalData.china.wasteMass;
             const chinaRecycleData = globalData.china.recycleability;
-            for (let j = 0; j < test2.length; j++){
+            for (let j = 0; j < chinaWasteData.length; j++){
                 lineGraph.data.datasets[0].data[j] = chinaWasteData[j];
                 lineGraph.data.datasets[1].data[j] = chinaRecycleData[j];
             }
@@ -127,7 +127,7 @@
         else if (name == 'RU'){
             const russiaWasteData = globalData.russia.wasteMass;
             const russiaRecycleData = globalData.russia.recycleability;
-            for (let j = 0; j < test3.length; j++){
+            for (let j = 0; j < russiaWasteData.length; j++){
                 lineGraph.data.datasets[0].data[j] = russiaWasteData[j];
                 lineGraph.data.datasets[1].data[j] = russiaRecycleData[j];
             }
