@@ -33,10 +33,6 @@
     let yearRaw = document.querySelector('#year');
 
 
-    function updateValue(event){
-        const valueDisplay = document.querySelector('#currentValue');
-        valueDisplay.textContent = event.target.value;
-    }
 
     //introHeader
     introHeader.addEventListener('click', function(){
@@ -170,7 +166,7 @@
 
 
     //productImpact
-    new Chart(doughnut1, {
+    let firstDoughtData = {
         type: 'doughnut',
         data: {
             labels: ['red', 'orange', 'yellow'],
@@ -188,8 +184,10 @@
             ]
 
         }
-    });
-    new Chart(doughnut2, {
+    };
+    let firstDoughnut = new Chart(doughnut1, firstDoughtData);
+
+    let secondDoughnutData = {
         type: 'doughnut',
         data: {
             labels: ['green', 'purple', 'orange', 'skyblue'],
@@ -208,8 +206,10 @@
             ]
 
         }
-    });
-    new Chart(doughnut3, {
+    }
+    let secondDoughnut = new Chart(doughnut2, secondDoughnutData);
+
+    let thirdDoughnutData = {
         type: 'doughnut',
         data: {
             labels: ['yellow', 'blue'],
@@ -226,22 +226,41 @@
             ]
 
         }
-    });
+    }
+    let thirdDoughnut = new Chart(doughnut3, thirdDoughnutData);
     
     document.addEventListener('DOMContentLoaded', function(){
         const yearInput = document.querySelector('#year');
+
         yearInput.addEventListener('input', function(event){
             const valueDisplay = document.querySelector('#currentValue');
-            valueDisplay.textContent = event.target.value;
+            let currentYear = event.target.value;
+            
+            valueDisplay.textContent = currentYear;
+
+            updateDoughnut(currentYear);
+
+            firstDoughnut.update();
+            secondDoughnut.update();
+            thirdDoughnut.update();
         });
     });
-    
+    function updateDoughnut(theYear){
+        let theDiff = theYear - yearRaw.min;
+        console.log(theDiff);
 
-    console.log(yearRaw.value);
-    console.log(yearRaw.max);
-    console.log(yearRaw.min);
+        firstDoughnut.data.datasets[0].data[0] = 300 - (theDiff * 5);
+        firstDoughnut.data.datasets[0].data[1] = 50 + (theDiff * 5);
+        firstDoughnut.data.datasets[0].data[2] = 100 + (theDiff * 10);
 
-    
+        secondDoughnut.data.datasets[0].data[0] = 300 - (theDiff * 5);
+        secondDoughnut.data.datasets[0].data[1] = 50 + (theDiff * 10);
+        secondDoughnut.data.datasets[0].data[2] = 100 + (theDiff * 5);
+        secondDoughnut.data.datasets[0].data[3] = 15 + (theDiff * 20);
+
+        thirdDoughnut.data.datasets[0].data[0] = 300 + (theDiff * 5);
+        firstDoughnut.data.datasets[0].data[1] = 500 - (theDiff * 10);
+    }
 
 
 
