@@ -33,6 +33,11 @@
     let yearRaw = document.querySelector('#year');
 
 
+    function updateValue(event){
+        const valueDisplay = document.querySelector('#currentValue');
+        valueDisplay.textContent = event.target.value;
+    }
+
     //introHeader
     introHeader.addEventListener('click', function(){
         console.log(counter);
@@ -49,10 +54,6 @@
 
 
     //recyclability+wasteProduction    
-    const test1 = [43, 87, 29, 64, 51, 76, 38];
-    const test2 = [92, 57, 33, 68, 74, 85, 46];
-    const test3 = [61, 48, 77, 95, 36, 59, 82];
-
     let theWasteData = {
         type: 'line',
         data: {
@@ -227,9 +228,20 @@
         }
     });
     
+    document.addEventListener('DOMContentLoaded', function(){
+        const yearInput = document.querySelector('#year');
+        yearInput.addEventListener('input', function(event){
+            const valueDisplay = document.querySelector('#currentValue');
+            valueDisplay.textContent = event.target.value;
+        });
+    });
+    
+
     console.log(yearRaw.value);
     console.log(yearRaw.max);
     console.log(yearRaw.min);
+
+    
 
 
 
