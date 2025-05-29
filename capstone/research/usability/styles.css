@@ -1,0 +1,300 @@
+/*header*/
+header{
+    height: 1130px;
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+
+    z-index: 2;
+}
+.garbageBag{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: rgb(180, 103, 103);
+
+    position: absolute;
+}
+#bag1{
+    top: 5%;
+    left: 3%;
+}
+#bag2{
+    top: 20%;
+    left: 33%;
+}
+#bag3{
+    bottom: 20%;
+    left: 53%;
+}
+#bag4{
+    top: 5%;
+    right: 13%;
+}
+#bag5{
+    bottom: 32%;
+    left: 14%;
+}
+
+/*usability test overlay*/
+#testInfo{
+    width: 800px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+}
+#testinfo h2{
+    text-align: center;
+    margin-top: 0px;
+}
+#testStart{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+/*curveGraphInteraction*/
+#elaboration{
+    height: 1130px;
+    background-color: orange;
+
+    padding: 30px 50px;
+
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    
+}
+#curveGraph{
+    width: 1000px;
+
+    position: relative;
+}
+#elaboration h2{
+    margin: 0px;
+    padding: 0px;
+}
+#selectCountries{
+    position: absolute;
+    top: 4%;
+    right: 3%;
+}
+
+/*largeNumberBigImpact*/
+#impactPoint{
+    height: 565px;
+    background-color: antiquewhite;
+    
+    text-align: center;
+}
+#impactPoint h2{
+    margin: 0px;
+    padding: 0px;
+}
+#pointGroups{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*bridgeSection*/
+#transition{
+    height: 565px;
+    background-color: rgb(217, 111, 111);
+    
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*productRelatedPage*/
+#productInfo{
+    height: 1130px;
+    background-color: darkcyan;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    position: relative;
+}
+#productInfo h2{
+    margin-top: 10px;
+}
+#productImg{
+    display: block;
+    width: 80%;
+}
+.hoverCircle{
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(132, 132, 132, 0.556);
+}
+#scanner{
+    position: absolute;
+    top: 9.5%;
+    left: 22%;
+}
+#display{
+    position: absolute;
+    top: 7%;
+    right: 22%;
+}
+#dispenseExit{
+    position: absolute;
+    top: 13%;
+    right: 38%;
+}
+#garbageDoor{
+    position: absolute;
+    top: 27%;
+    right: 29%;
+}
+.detailInfo{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#scannerDetail{
+    position: absolute;
+    top: 11%;
+    left: 24%;
+}
+#displayDetail{
+    position: absolute;
+    top: 8.5%;
+    right: 5%;
+}
+#dispenseExitDetail{
+    position: absolute;
+    top: 15%;
+    right: 21%;
+}
+#garbageDoorDetail{
+    position: absolute;
+    top: 28.5%;
+    right: 31%;
+}
+#centerText{
+    text-align: center;
+}
+
+/*pieChartSlideBarChange*/
+#productImpact{
+    height: 1000px;
+    background-color: dodgerblue;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    
+}
+#productImpact h2{
+    margin-top: 0px;
+}
+#pieCharts{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.circleChart{
+    width: 400px;
+    height: 400px;
+}
+#year{
+    width: 1000px;
+}
+
+/*narrative*/
+#speculativeWorld{
+    height: 1050px;
+    background-color: mistyrose;
+    padding: 20px;
+
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+#slideshow{
+    width: 736px;
+    height: 880px;
+    background-color: rebeccapurple;
+
+    position: relative;
+}
+#before{
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 22.5px 41px 22.5px 0;
+   border-color: transparent #4852FF transparent transparent;
+   transform: rotate(0deg);
+
+   position: absolute;
+   top: 50%;
+   left: 3%;
+}
+#after{
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 22.5px 0 22.5px 41px;
+   border-color: transparent transparent transparent #4852FF;
+   transform: rotate(0deg);
+
+   position: absolute;
+   top: 50%;
+   right: 3%;
+}
+#narrativeText{
+    width: 736px;
+    height: 880px;
+    background-color: lightcyan;
+
+    padding: 20px;
+}
+
+/*onOFF*/
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s ease;
+}
+.showing{
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.2s ease;
+}
