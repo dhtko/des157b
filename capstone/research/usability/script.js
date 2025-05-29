@@ -32,6 +32,9 @@
     const doughnut3 = document.querySelector('#doughnut3');
     let yearRaw = document.querySelector('#year');
 
+    const testBtn = document.querySelector('#testStart');
+    const testInfo = document.querySelector('#testInfo');
+
 
 
     //introHeader
@@ -47,6 +50,14 @@
             centerText.className = 'showing';
         }
     });
+
+
+    //testOverlay
+    testBtn.addEventListener('click', function(){
+        testInfo.className = 'hidden';
+    });
+
+
 
 
     //recyclability+wasteProduction    

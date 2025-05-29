@@ -64,13 +64,30 @@ h1{
 
     padding: 10px;
 }
-#testinfo h2{
+#testInfo h2{
     text-align: center;
+    margin-top: 10px;
+
+    font-family: 'AR One Sans';
+    font-weight: 600;
+    font-size: 20px;
+}
+#testInfo p, #testInfo li{
+    font-family: 'AR One Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+ol{
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 #testStart{
     align-self: center;
     margin-bottom: 10px;
+
+    font-family: 'AR One Sans';
+    font-weight: 400;
+    font-size: 16px;
 }
 
 
