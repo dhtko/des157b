@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     margin: 20 auto;
 
-    background-color: #4C8055;
+    background-color: #CADCFC;
 }
 header{
     text-align: center;
@@ -14,7 +14,7 @@ main{
     padding: 15px;
 }
 section{
-    background-color: #D9DAD9;
+    background-color: #8AB6F9;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     
@@ -28,24 +28,27 @@ section:first-child{
 h1{
     font-family: 'Outfit';
     font-size: 40px;
-    color: #83d3d5;
+    color: #00246B;
 
     margin: 20px 0 10px 0;
 }
 h2{
     font-family: 'Gabarito';
     font-size: 30px;
-    color: #507D7E;
+    color: #00246B;
 
     margin: 0px auto;
 }
 ul{
     margin-bottom: 0px;
 }
-li{
+li, p{
     font-family: 'Lato';
     font-size: 18px;
-    color: #507D7E;
+    color: #00246B;
 
     margin-bottom: 0px;
+}
+li{
+    margin-bottom: 10px;
 }
