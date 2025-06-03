@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Alexandria&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!--Textify CSS-->
+    <link src="https://cdn.jsdelivr.net/npm/textify.js@3.0.1/dist/Textify.min.css" rel="stylesheet"/>
+
     <!--Stylesheet-->
     <link href="styles.css" rel="stylesheet">
     
@@ -25,6 +28,14 @@
 
     <!--Chart.JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+
+    <!--Animate.js-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+    <!--Textify.js-->
+    <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
+    <!--gsap engine (for Textify.js)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
     <!--custom JS-->
     <script src="./script.js" defer></script>
@@ -116,7 +127,7 @@
         <section id="transition">
             <div>
                 <h2>If we cannot recycle our garbage actively...</h2>
-                <p>Why not <em>EAT THEM?</em></p>
+                <p>Why not <em id="test" data-test data-Textify>EAT THEM?</em></p>
             </div>
         </section>
 

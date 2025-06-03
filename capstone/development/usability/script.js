@@ -35,8 +35,8 @@
     const testBtn = document.querySelector('#testStart');
     const testInfo = document.querySelector('#testInfo');
 
-
-
+    new Textify({}, gsap);
+ 
     //introHeader
     introHeader.addEventListener('click', function(){
         console.log(counter);
@@ -144,8 +144,26 @@
             }
         }
     }
+
+
+
+    //transition
+    new Textify({
+        el: "[data-test]",
+        animation: {
+            stagger: 0.025,
+            duration: 0.7,
+            delay: 5.0,
+            ease: 'expo.inOut',
+            animateProps: {
+                "opacity": 0,
+                "scale": 0
+            }
+        }
+    }, gsap);
    
 
+    
     //productInformation
     scannerCircle.addEventListener('click', function(){
         scannerDetailInfo.className = 'detailInfo showing'
