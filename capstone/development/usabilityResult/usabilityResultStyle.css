@@ -24,6 +24,17 @@ section{
 section:first-child{
     margin-top: 10px;
 }
+#imageGroup{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+img{
+    width: 420px;
+    height: 250px;
+}
 
 h1{
     font-family: 'Outfit';
