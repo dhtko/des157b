@@ -34,8 +34,10 @@
 
     new Textify({}, gsap);
 
-    
+    let currentSection = 0;
+    const sections = document.querySelectorAll('section');
 
+    
 
     //introHeader
     introHeader.addEventListener('click', function(){
@@ -56,13 +58,26 @@
             enableScroll();
         }
     });
-
     function disableScroll(){
         document.body.classList.add('noScroll');
     }
     function enableScroll(){
         document.body.classList.remove('noScroll');
     }
+
+
+
+    //scrollbySection
+    window.addEventListener('wheel',function(event){
+        if (event.deltaY > 0 && currentSection < sections.length - 1){
+            currentSection++;
+            sections[currentSection].scrollIntoView({ behavior: 'smooth'});
+        }
+        else if (event.deltaY < 0 && currentSection > 0){
+            currentSection--;
+            sections[currentSection].scrollIntoView({ behavior: 'smooth'});
+        }
+    });
 
 
 
