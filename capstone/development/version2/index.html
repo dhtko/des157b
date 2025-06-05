@@ -42,44 +42,38 @@
 </head>
 <body>
     <header>
-        <h1 class="hidden" id="centerText">This is our near future</h1>
-        <div class="garbageBag hidden" id="bag1"></div>
-        <div class="garbageBag hidden" id="bag2"></div>
-        <div class="garbageBag hidden" id="bag3"></div>
-        <div class="garbageBag hidden" id="bag4"></div>
-        <div class="garbageBag hidden" id="bag5"></div>        
+        <h1 class="showing" id="centerText">Click to see our future</h1>
         
-        
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag1">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag2">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag3">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag4">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag5">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag6">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag7">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag8">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag9">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag10">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag11">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag12">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag13">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag14">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag15">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag16">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag17">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag18">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag19">
+        <img src="./images/garbageBag.png" alt="garbageBag" class="garbageBag hidden" id="bag20">
+                
     </header>
     
-    <div class="showing" id="testInfo">
-        <h2>Welcome to the usability test of the first version of my capstone project</h2>
-            <p>
-                The project is about a speculative future where a first 3d food printing machine that transforms garbage to edible food ever released because gloabl production of waste is too much.<br>
-
-                <br>For the usability test, I want you to:
-                <ol>
-                    <li>explore the project like you would normally interact a website</li>
-                    <li>interact with the interactive features</li>
-                </ol>
-            </p>
-            <p>
-                After completing the tasks, an interview session will be performed to understand the weakness of the current verion. So, reach out to me when you finished the assigned tasks.
-            </p>
-            <p>
-                *The current version is still under development: the visual elements and the contents are not fully developed. I will leave messages "under construction" or description on the effects that will be added in the future versions.
-            </p>
-
-            <button id="testStart">Start the Usability Test</button>
-        </div>
-
     <main>
 
 
         <section id="elaboration">
             
             <div id="curveGraph">
-                <canvas id='myChart' width="750" height="750"></canvas>
+                <canvas id='myChart' width="750" height="700"></canvas>
 
                 <div id="selectCountries">
                     <select name="countries" id="countries">
@@ -93,10 +87,13 @@
             </div>
 
             <div>
-                <h2>Graph + Interaction</h2>
+                <h2>You didn't care your garbage</h2>
                 <p>
-                    Ever since the fast production has become the new standard, waste production has increased significantly. In 2018, US by iteslf alone has produced 35 tons of garbage, which is 30% of the worldwide garbage production.<br>
-                    <br>Despite the massive increase of unwanted objects, people do not recycle them actively that giant garbage mountains started to form, and force people to incinerate the garbage, risking their environments.
+                    Ever since the industrial revolution, our world has entered an era of fast production: mass production has become the industry standard, and manufacturers produce massive products. As such, industries are constantly releasing new products, and people can access any product they want anytime.<br>
+                    <br>
+                    However, as fast production has become the new standard over the years, several economic problems have started to rise. The first notable problem is that too many products have been released over the years. This became a notable environmental problem because the leftover stocks have become waste that cannot be recycled from using non-biodegradable materials like plastic.<em> (Real case example)</em> Furthermore, a new trend called 'fast fashion,' where people quickly replace their products (especially noted in the fashion-related products), has boosted the production rate as well.<br>
+                    <br>
+                    In addition to the increase in leftover stocks, the rate of recyclability is relatively low. Despite the numerous ways to consume materials being available, recyclability is the most important because other methods, like incineration, harm our environment by emitting toxic gases. However, not many countries are active with the technique because of its low efficiency (it takes too much time to deal with the massive amount of garbage).
                 </p>
             </div>
 
@@ -146,22 +143,28 @@
 
             <div class="detailInfo hidden" id="scannerDetail">
                 <h4>Scanner</h4>
-                <p>Whatever the scanner is</p>
+                <p>
+                    Upon agreement, FlavorNeutral5000 will collect your health record and customize the nutritional value of the packet to suit your health conditions.
+                </p>
             </div>
 
             <div class="detailInfo hidden" id="displayDetail">
                 <h4>Display</h4>
-                <p>Whatever the scanner is</p>
+                <p>
+                    Digital display that displays the chat from the integrated AI of the flavorNeutral5000. If the user is blind, the integrated AI will speak the text through the speakers.
+                </p>
             </div>
 
             <div class="detailInfo hidden" id="dispenseExitDetail">
                 <h4>Dispense Exit</h4>
-                <p>Whatever the scanner is</p>
+                <p>Separate exit for the food packets to prevent any confusion. </p>
             </div>
 
             <div class="detailInfo hidden" id="garbageDoorDetail">
                 <h4>Garbage Door</h4>
-                <p>Whatever the scanner is</p>
+                <p>
+                    A dedicated area where people place their garbage for their food packet. When the person places the required amount of garbage, the door will automatically close with a 5-second ahead of warning.
+                </p>
             </div>
         </section>
 
@@ -181,8 +184,7 @@
             </div>
 
             <input type="range" id="year" name="year" min="2025" max="2070" value="2025" step="1">
-            <span id="currentValue">2025</span>
-            <label for="year">year</label>
+            <label for="year">year: <span id="currentValue">2025</span></label>
         </section>
 
         <section id="speculativeWorld">
@@ -191,9 +193,11 @@
                 <div id="after"></div>
             </div>
             <div id="narrativeText">
-                <h2>Narrative</h2>
+                <h2>When FlavorNeutral5000 launches...</h2>
                 <p>
-                    blah blah blah blah
+                    After FlaoveNeutral5000 have successfully launched settled into our world, the positive change in our environment was observed: the total mass of garbage across the globe have rapidly decreased, the carbon footprint made across the globe have significantly reduced (especially in food areas (raising cows), and garbage-related areas (recycling factories)), the use of traditional energy like fossil fuels have significantly reduced, and the land used to trash dumps have rewilded. In addition, the production of healthy food through FlavorNetural5000 have contributed positive effect to the food-related issues as well: the reliance on traditional farms and industrial foods declines, the necessity of wholesale markets and refrigerated transport have decreased, and the health conditions across the globe have improved significantly by consuming nutrient-dense printed food more than currently existing food.<br>
+                    <br>
+                    However, as much as the FlavorNeutral5000 has brought several positive impacts to the world, the radical change comes with backfires. Ever since the FlavorNeutral500 has become the standard method to acquire food, garbage and waste have become a secondary currency for survival. As such, related crimes have significantly increased: robbery, murder, black market, threats, and many more. In addition, the printed food has one critical flaw: the taste (the printed food is gray liquid with apple-jam consistency, and has zero taste). Due to its tasteless characteristic, mental health issues, like depression and lethargy, have notably increased worldwide.
                 </p>
             </div>
         </section>

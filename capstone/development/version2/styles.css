@@ -1,6 +1,6 @@
 /*header*/
 header{
-    height: 1130px;
+    height: 100vh;
     background-color: green;
 
     display: flex;
@@ -16,84 +16,156 @@ h1{
     z-index: 2;
 
     font-family: "Alexandria";
+    font-size: 50px;
 }
 .garbageBag{
     width: 300px;
     height: 300px;
-    border-radius: 50px;
-    background-color: rgb(180, 103, 103);
 
     position: absolute;
 }
 #bag1{
-    top: 5%;
-    left: 3%;
+    top: 0%;
+    left: 0%;
+
+    width: 400px;
+    height: 400px;
 }
 #bag2{
-    top: 20%;
-    left: 33%;
+    bottom: 0%;
+    left: 0%;
+
+    width: 200px;
+    height: 200px;
 }
 #bag3{
-    bottom: 20%;
-    left: 53%;
+    top: 0%;
+    right: 0%;
 }
 #bag4{
-    top: 5%;
-    right: 13%;
+    bottom: 0%;
+    right: 0%;
+
+    width: 500px;
+    height: 500px;
 }
 #bag5{
-    bottom: 32%;
-    left: 14%;
+    bottom: 21.5%;
+    left: 0%;
+
+    width: 350px;
+    height: 350px;
+}
+#bag6{
+    top: 0%;
+    left: 21%;
+
+    width: 275px;
+    height: 275px;
+}
+#bag7{
+    top: 0%;
+    left: 36%;
+}
+#bag8{
+    top: 0%;
+    right: 30.5%;
+
+    width: 330px;
+    height: 330px;
+}
+#bag9{
+    top: 0%;
+    right: 15.8%;
+
+    width: 280px;
+    height: 280px;
+}
+#bag10{
+    bottom: 0%;
+    left: 11%;
+
+    width: 200px;
+    height: 200px;
+}
+#bag11{
+    bottom: 0%;
+    left: 22%;
+
+    width: 450px;
+    height: 450px;
+}
+#bag12{
+    bottom: 0%;
+    left: 46%;
+
+    width: 330px;
+    height: 330px;
+}
+#bag13{
+    bottom: 0%;
+    right: 26%;
+
+    width: 200px;
+    height: 200px;
+}
+#bag14{
+    top: 29%;
+    left: 20%;
+
+    width: 230px;
+    height: 230px;
+}
+#bag15{
+    top: 32%;
+    left: 33%;
+
+    width: 200px;
+    height: 200px;
+}
+#bag16{
+    top: 34.5%;
+    left: 43.5%;
+    
+    width: 290px;
+    height: 290px;
+}
+#bag17{
+    top: 35%;
+    right: 22.5%;
+    
+    width: 340px;
+    height: 340px;
+}
+#bag18{
+    top: 32%;
+    right: 0%;
+
+    width: 150px;
+    height: 150px;
+}
+#bag19{
+    top: 32%;
+    right: 8%;
+
+    width: 150px;
+    height: 150px;
+}
+#bag20{
+    top: 30%;
+    right: 16%;
+
+    width: 170px;
+    height: 170px;
 }
 
-/*usability test overlay*/
-#testInfo{
-    width: 800px;
-    height: 400px;
-    border-radius: 15px;
-    background-color: white;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 10px;
-}
-#testInfo h2{
-    text-align: center;
-    margin-top: 10px;
-
-    font-family: 'AR One Sans';
-    font-weight: 600;
-    font-size: 20px;
-}
-#testInfo p, #testInfo li{
-    font-family: 'AR One Sans';
-    font-weight: 400;
-    font-size: 16px;
-}
-ol{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-#testStart{
-    align-self: center;
-    margin-bottom: 10px;
-
-    font-family: 'AR One Sans';
-    font-weight: 400;
-    font-size: 16px;
-}
 
 
 /*curveGraphInteraction*/
 #elaboration{
-    height: 900px;
+    height: 100vh;
+
     background-color: #787878;
     color: rgb(244, 244, 244);
 
@@ -119,7 +191,7 @@ ol{
 #elaboration p{
     font-family: 'AR One Sans';
     font-weight: 400;
-    font-size: 40px;
+    font-size: 24px;
 }
 #selectCountries{
     position: absolute;
@@ -127,9 +199,11 @@ ol{
     right: 3%;
 }
 
+
+
 /*largeNumberBigImpact*/
 #impactPoint{
-    height: 565px;
+    height: 50vh;
     background-color: rgb(163, 163, 163);
 
     text-align: center;
@@ -175,7 +249,7 @@ ol{
 
 /*bridgeSection*/
 #transition{
-    height: 565px;
+    height: 50vh;
     background-color: rgb(112, 112, 112);
     color: rgb(237, 237, 237);
     
@@ -198,7 +272,7 @@ ol{
 
 /*productRelatedPage*/
 #productInfo{
-    height: 1100px;
+    height: 100vh;
     background-color: #D5FFCF;
 
     display: flex;
@@ -229,7 +303,7 @@ ol{
 }
 #productImg{
     display: block;
-    width: 80%;
+    width: 70%;
 }
 .hoverCircle{
     border-radius: 50px;
@@ -293,7 +367,7 @@ ol{
 
 /*pieChartSlideBarChange*/
 #productImpact{
-    height: 900px;
+    height: 100vh;
     
     background: #D5FFCF;
     background: linear-gradient(180deg, rgba(213, 255, 207, 1) 0%, rgba(159, 255, 239, 1) 100%);;
@@ -336,7 +410,7 @@ ol{
 
 /*narrative*/
 #speculativeWorld{
-    height: 950px;
+    height: 100vh;
     background-color: #9FFFEF;
     padding: 30px;
 
@@ -346,7 +420,7 @@ ol{
 }
 #slideshow{
     width: 736px;
-    height: 920px;
+    height: 85vh;
     background-color: rebeccapurple;
     border-radius: 30px;
 
@@ -378,7 +452,7 @@ ol{
 }
 #narrativeText{
     width: 736px;
-    height: 880px;
+    height: 85vh;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 

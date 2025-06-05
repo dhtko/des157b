@@ -32,31 +32,28 @@
     const doughnut3 = document.querySelector('#doughnut3');
     let yearRaw = document.querySelector('#year');
 
-    const testBtn = document.querySelector('#testStart');
-    const testInfo = document.querySelector('#testInfo');
-
     new Textify({}, gsap);
- 
+
+    
+
+
     //introHeader
     introHeader.addEventListener('click', function(){
-        console.log(counter);
         const bagGroup = bags.length;
+
+        centerText.className = 'hidden';
 
         if (counter < bagGroup){
             document.querySelector(`#bag${counter+1}`).className = 'garbageBag showing';
             counter++;
         }
         else{
+            centerText.innerHTML = 'THIS IS Our Future';
+            centerText.style.color = 'white';
+            centerText.style.fontSize = '75px';
             centerText.className = 'showing';
         }
     });
-
-
-    //testOverlay
-    testBtn.addEventListener('click', function(){
-        testInfo.className = 'hidden';
-    });
-
 
 
 
@@ -198,11 +195,11 @@
     let firstDoughtData = {
         type: 'doughnut',
         data: {
-            labels: ['red', 'orange', 'yellow'],
+            labels: ['Printed Food Adoption (%)', 'Traditional Farming Products (%)', 'Industrial Processed Foods (%)'],
             datasets: [
                 {
-                    label: 'First doughnut Chart',
-                    data: [300, 50, 100],
+                    label: 'Food Source Composition',
+                    data: [5, 30, 30],
                     backgroundColor: [
                         'rgb(251, 44, 0)',
                         'rgb(251, 122, 0)',
@@ -219,16 +216,15 @@
     let secondDoughnutData = {
         type: 'doughnut',
         data: {
-            labels: ['green', 'purple', 'orange', 'skyblue'],
+            labels: ['Waste Recycled into Food (%)', 'Landfilled Waste (%)', 'Incinerated Waste (%)'],
             datasets: [
                 {
-                    label: 'Second doughnut Chart',
-                    data: [300, 50, 100, 15],
+                    label: 'Waste Stream Composition',
+                    data: [5, 30, 65],
                     backgroundColor: [
                         'rgb(0, 193, 50)',
                         'rgb(128, 0, 193)',
-                        'rgb(251, 122, 0)',
-                        'rgb(73, 251, 239)'
+                        'rgb(251, 122, 0)'
                     ],
                     hoverOffset: 4
                 }
@@ -241,14 +237,15 @@
     let thirdDoughnutData = {
         type: 'doughnut',
         data: {
-            labels: ['yellow', 'blue'],
+            labels: ['Land Returned to Nature (%)', 'Land Used for Agriculture (%)', 'Land Used for Landfills (%)'],
             datasets: [
                 {
-                    label: 'Third doughnut Chart',
-                    data: [300, 500],
+                    label: 'Land Use Distribution',
+                    data: [0, 30, 70],
                     backgroundColor: [
                         'rgb(251, 210, 0)',
-                        'rgb(79, 73, 251)'
+                        'rgb(79, 73, 251)',
+                        'rgb(215, 191, 143)'
                     ],
                     hoverOffset: 4
                 }
@@ -278,17 +275,17 @@
         let theDiff = theYear - yearRaw.min;
         console.log(theDiff);
 
-        firstDoughnut.data.datasets[0].data[0] = 300 - (theDiff * 5);
-        firstDoughnut.data.datasets[0].data[1] = 50 + (theDiff * 5);
-        firstDoughnut.data.datasets[0].data[2] = 100 + (theDiff * 10);
+        firstDoughnut.data.datasets[0].data[0] = 5 + (theDiff * 1.5);
+        firstDoughnut.data.datasets[0].data[1] = 35 - (theDiff * 0.2);
+        firstDoughnut.data.datasets[0].data[2] = 60 - (theDiff * 1.05);
 
-        secondDoughnut.data.datasets[0].data[0] = 300 - (theDiff * 5);
-        secondDoughnut.data.datasets[0].data[1] = 50 + (theDiff * 10);
-        secondDoughnut.data.datasets[0].data[2] = 100 + (theDiff * 5);
-        secondDoughnut.data.datasets[0].data[3] = 15 + (theDiff * 20);
+        secondDoughnut.data.datasets[0].data[0] = 5 + (theDiff * 1.5);
+        secondDoughnut.data.datasets[0].data[1] = 30 - (theDiff * 0.75);
+        secondDoughnut.data.datasets[0].data[2] = 60 - (theDiff * 1.1);
 
-        thirdDoughnut.data.datasets[0].data[0] = 300 + (theDiff * 5);
-        firstDoughnut.data.datasets[0].data[1] = 500 - (theDiff * 10);
+        thirdDoughnut.data.datasets[0].data[0] = 0 + (theDiff * 1.4);
+        thirdDoughnut.data.datasets[0].data[1] = 30 - (theDiff * 0.5);
+        thirdDoughnut.data.datasets[0].data[2] = 70 - (theDiff * 0.9);
     }
 
 
