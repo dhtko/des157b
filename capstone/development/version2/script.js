@@ -37,13 +37,15 @@
     let currentSection = 0;
     const sections = document.querySelectorAll('section');
 
+
     
 
     //introHeader
+    //disableScroll();
     introHeader.addEventListener('click', function(){
-        disableScroll();
         const bagGroup = bags.length;
 
+        disableScroll();
         centerText.className = 'hidden';
 
         if (counter < bagGroup){
@@ -68,14 +70,16 @@
 
 
     //scrollbySection
-    window.addEventListener('wheel',function(event){
-        if (event.deltaY > 0 && currentSection < sections.length - 1){
+    window.addEventListener('wheel', (event) => {
+        if (event.deltaY > 0 && currentSection < sections.length - 1) {
             currentSection++;
-            sections[currentSection].scrollIntoView({ behavior: 'smooth'});
-        }
-        else if (event.deltaY < 0 && currentSection > 0){
+            console.log('currentsection: ', currentSection);
+            sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+        } 
+        else if (event.deltaY < 0 && currentSection > 0) {
             currentSection--;
-            sections[currentSection].scrollIntoView({ behavior: 'smooth'});
+            console.log('currentsection: ', currentSection);
+            sections[currentSection].scrollIntoView({ behavior: 'smooth' });
         }
     });
 

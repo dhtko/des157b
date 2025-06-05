@@ -264,6 +264,12 @@ h1{
     font-weight: 700;
     font-size: 55px;
 }
+#transition h2{
+    margin-bottom: 0px;
+}
+#transition p{
+    margin-top: 0px;
+}
 #transition em{
     font-family: 'AR One Sans';
     font-weight: 700;
