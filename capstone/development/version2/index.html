@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Normalize CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Alexandria&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Textify CSS-->
+    <link src="https://cdn.jsdelivr.net/npm/textify.js@3.0.1/dist/Textify.min.css" rel="stylesheet"/>
+
+    <!--Stylesheet-->
+    <link href="styles.css" rel="stylesheet">
+    
+    <!--For favicon.ico:1 error; I googled the error and this solution solved it-->
+    <link rel="shortcut icon" href="#">
+
+    <title>Usability Test</title>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Chart.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+
+    <!--Animate.js-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+    <!--Textify.js-->
+    <script src=" https://cdn.jsdelivr.net/npm/textify.js/dist/Textify.min.js"></script>
+    <!--gsap engine (for Textify.js)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!--custom JS-->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="hidden" id="centerText">This is our near future</h1>
+        <div class="garbageBag hidden" id="bag1"></div>
+        <div class="garbageBag hidden" id="bag2"></div>
+        <div class="garbageBag hidden" id="bag3"></div>
+        <div class="garbageBag hidden" id="bag4"></div>
+        <div class="garbageBag hidden" id="bag5"></div>        
+        
+        
+    </header>
+    
+    <div class="showing" id="testInfo">
+        <h2>Welcome to the usability test of the first version of my capstone project</h2>
+            <p>
+                The project is about a speculative future where a first 3d food printing machine that transforms garbage to edible food ever released because gloabl production of waste is too much.<br>
+
+                <br>For the usability test, I want you to:
+                <ol>
+                    <li>explore the project like you would normally interact a website</li>
+                    <li>interact with the interactive features</li>
+                </ol>
+            </p>
+            <p>
+                After completing the tasks, an interview session will be performed to understand the weakness of the current verion. So, reach out to me when you finished the assigned tasks.
+            </p>
+            <p>
+                *The current version is still under development: the visual elements and the contents are not fully developed. I will leave messages "under construction" or description on the effects that will be added in the future versions.
+            </p>
+
+            <button id="testStart">Start the Usability Test</button>
+        </div>
+
+    <main>
+
+
+        <section id="elaboration">
+            
+            <div id="curveGraph">
+                <canvas id='myChart' width="750" height="750"></canvas>
+
+                <div id="selectCountries">
+                    <select name="countries" id="countries">
+                        <option value="US">United States of America</option>
+                        <option value="CN">China</option>
+                        <option value="RU">Russia</option>
+                    </select>
+                    <button id="selectCountry">confirm</button>
+                </div>
+                
+            </div>
+
+            <div>
+                <h2>Graph + Interaction</h2>
+                <p>
+                    Ever since the fast production has become the new standard, waste production has increased significantly. In 2018, US by iteslf alone has produced 35 tons of garbage, which is 30% of the worldwide garbage production.<br>
+                    <br>Despite the massive increase of unwanted objects, people do not recycle them actively that giant garbage mountains started to form, and force people to incinerate the garbage, risking their environments.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="impactPoint">
+            <h2>If such trend continues, our near future will be<br>filled with garbage bags and much difficult to live</h2>
+
+            <div id="pointGroups">
+                <div class="point">
+                    <h3>5000<em>tons</em></h3>
+                    <p>Produced Waste in 2050</p>
+                </div>
+
+                <div class="point">
+                    <h3>30<em>cm</em></h3>
+                    <p>Sea Level Rise in 30 years</p>
+                </div>
+
+                <div class="point">
+                    <h3>110<em>F</em></h3>
+                    <p>Average Temp. in 2050</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="transition">
+            <div>
+                <h2>If we cannot recycle our garbage actively...</h2>
+                <p>Why not <em id="test" data-test data-Textify>EAT THEM?</em></p>
+            </div>
+        </section>
+
+        <section id="productInfo">
+            <div id="centerText">
+                <h2>Introduce <em>FlavorNeutral5000</em></h2>
+                <h3>THE MAGIC BOX THAT TRANSFORMS GARBAGE TO FOOD!</h3>
+            </div>
+            
+            <img src='./images/flavorNeutral.png' alt="productImage" id='productImg'>
+            
+            <div class="hoverCircle" id="scanner"></div>
+            <div class="hoverCircle" id="display"></div>
+            <div class="hoverCircle" id="dispenseExit"></div>
+            <div class="hoverCircle" id="garbageDoor"></div>
+
+            <div class="detailInfo hidden" id="scannerDetail">
+                <h4>Scanner</h4>
+                <p>Whatever the scanner is</p>
+            </div>
+
+            <div class="detailInfo hidden" id="displayDetail">
+                <h4>Display</h4>
+                <p>Whatever the scanner is</p>
+            </div>
+
+            <div class="detailInfo hidden" id="dispenseExitDetail">
+                <h4>Dispense Exit</h4>
+                <p>Whatever the scanner is</p>
+            </div>
+
+            <div class="detailInfo hidden" id="garbageDoorDetail">
+                <h4>Garbage Door</h4>
+                <p>Whatever the scanner is</p>
+            </div>
+        </section>
+
+        <section id="productImpact">
+            <h2>Check how much can we change our enviroment<br>if we start to eat our garbage!</h2>
+
+            <div id="pieCharts">
+                <div class="circleChart">
+                    <canvas id="doughnut1"></canvas>
+                </div>
+                <div class="circleChart">
+                    <canvas id="doughnut2"></canvas>
+                </div>
+                <div class="circleChart">
+                    <canvas id="doughnut3"></canvas>
+                </div>
+            </div>
+
+            <input type="range" id="year" name="year" min="2025" max="2070" value="2025" step="1">
+            <span id="currentValue">2025</span>
+            <label for="year">year</label>
+        </section>
+
+        <section id="speculativeWorld">
+            <div id="slideshow">
+                <div id="before"></div>
+                <div id="after"></div>
+            </div>
+            <div id="narrativeText">
+                <h2>Narrative</h2>
+                <p>
+                    blah blah blah blah
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
