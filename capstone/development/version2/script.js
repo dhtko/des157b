@@ -39,6 +39,7 @@
 
     //introHeader
     introHeader.addEventListener('click', function(){
+        disableScroll();
         const bagGroup = bags.length;
 
         centerText.className = 'hidden';
@@ -52,8 +53,17 @@
             centerText.style.color = 'white';
             centerText.style.fontSize = '75px';
             centerText.className = 'showing';
+            enableScroll();
         }
     });
+
+    function disableScroll(){
+        document.body.classList.add('noScroll');
+    }
+    function enableScroll(){
+        document.body.classList.remove('noScroll');
+    }
+
 
 
 
