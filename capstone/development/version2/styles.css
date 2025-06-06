@@ -198,6 +198,10 @@ h1{
     top: 4%;
     right: 3%;
 }
+canvas{
+    padding: 15px;
+    background-color: white;
+}
 
 
 
@@ -226,12 +230,16 @@ h1{
 #pointGroups{
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 200px;
+}
+#point1, #point2, #point3{
+    font-weight: 700;
+    font-size: 100px;
 }
 #pointGroups h3{
     font-family: "Noto Sans";
-    font-weight: 700;
-    font-size: 100px;
+    font-weight: 400;
+    font-size: 40px;
     
     margin-top: 20px;
     margin-bottom: 0px;
@@ -275,6 +283,8 @@ h1{
     font-weight: 700;
     font-size: 120px;
 }
+
+
 
 /*productRelatedPage*/
 #productInfo{
@@ -339,11 +349,11 @@ h1{
 }
 .detailInfo{
     width: 300px;
-    height: 150px;
+    height: 170px;
     border-radius: 20px;
     background-color: grey;
     color: white;
-    padding: 10px;
+    padding: 15px;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -367,6 +377,20 @@ h1{
     top: 28.5%;
     right: 31%;
 }
+#scannerDetail h4, #displayDetail h4, #dispenseExitDetail h4, #garbageDoorDetail h4{
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+    font-family: 'AR One Sans';
+    font-weight: 600;
+    font-size: 28px;
+}
+#scannerDetail p, #displayDetail p, #dispenseExitDetail p, #garbageDoorDetail p{
+    font-family: 'AR One Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
 #centerText{
     text-align: center;
 }
@@ -432,6 +456,9 @@ h1{
 
     position: relative;
 }
+#slideshowImg{
+    border-bottom-left-radius: 30px;
+}
 #before{
    width: 0px;
    height: 0px;
@@ -455,6 +482,26 @@ h1{
    position: absolute;
    top: 50%;
    right: 3%;
+}
+#caption{
+    height: 100px;
+    background-color: rgba(119, 119, 119, 0.67);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    position: absolute;
+    bottom: 0%;
+    width: 736px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#captionText{
+    font-family: 'AR One Sans';
+    font-weight: 300;
+    font-size: 12px;
+    color: rgb(247, 247, 247);
 }
 #narrativeText{
     width: 736px;

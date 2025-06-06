@@ -21,7 +21,7 @@
     <!--For favicon.ico:1 error; I googled the error and this solution solved it-->
     <link rel="shortcut icon" href="#">
 
-    <title>Usability Test</title>
+    <title>CP Version 2</title>
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -68,6 +68,7 @@
     </header>
     
     <main>
+
         <section id="elaboration">
             
             <div id="curveGraph">
@@ -102,17 +103,17 @@
 
             <div id="pointGroups">
                 <div class="point">
-                    <h3>5000<em>tons</em></h3>
+                    <h3><span id="point1" class="points" akhi="5000">0</span> tons</h3>
                     <p>Produced Waste in 2050</p>
                 </div>
 
                 <div class="point">
-                    <h3>30<em>cm</em></h3>
+                    <h3><span id="point2" class="points" akhi="3000">0</span> cm</h3>
                     <p>Sea Level Rise in 30 years</p>
                 </div>
 
                 <div class="point">
-                    <h3>110<em>F</em></h3>
+                    <h3><span id="point3" class="points" akhi="1100">0</span> F</h3>
                     <p>Average Temp. in 2050</p>
                 </div>
             </div>
@@ -187,8 +188,12 @@
 
         <section id="speculativeWorld">
             <div id="slideshow">
+                <img src="./images/placeholder1.jpg" alt="placeholder" id="slideshowImg">
                 <div id="before"></div>
                 <div id="after"></div>
+                <div class="hidden" id="caption">
+                    <p id="captionText">sample text</p>
+                </div>
             </div>
             <div id="narrativeText">
                 <h2>When FlavorNeutral5000 launches...</h2>
@@ -199,6 +204,7 @@
                 </p>
             </div>
         </section>
+
     </main>
 </body>
 </html>

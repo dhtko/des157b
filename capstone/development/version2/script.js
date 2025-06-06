@@ -18,6 +18,7 @@
     const slideshowBefore = document.querySelector('#before');
     const slideshowAfter = document.querySelector('#after');
     const slideshowImage = document.querySelector('#slideshow');
+    const caption = document.querySelector('#caption');
 
     const introHeader = document.querySelector('header');
     const bags = document.querySelectorAll('.garbageBag');
@@ -36,6 +37,9 @@
 
     let currentSection = 0;
     const sections = document.querySelectorAll('section');
+
+    const speed = 200;
+    const counters = document.querySelectorAll('.points');
 
 
     
@@ -75,11 +79,13 @@
             currentSection++;
             console.log('currentsection: ', currentSection);
             sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+            numCounter(currentSection); //for number counter animation
         } 
         else if (event.deltaY < 0 && currentSection > 0) {
             currentSection--;
             console.log('currentsection: ', currentSection);
             sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+            numCounter(currentSection); //for number counter animation
         }
     });
 
@@ -173,6 +179,39 @@
 
 
 
+    //largeImpactNumber
+    function numCounter(currentSection){
+        
+        if (currentSection === 1){
+            counters.forEach( counter => {
+                const animate = () => {
+                    const value =+ counter.getAttribute('akhi');
+                    const data =+ counter.innerText;
+        
+                    const time = value / speed;
+                    if(data < value) {
+                        counter.innerText = Math.ceil(data + time);
+                        setTimeout(animate, 1);
+                    }
+                    else{
+                        counter.innerText = value;
+                    }
+                }
+            
+                animate();
+            });
+        }
+
+        else{
+            counters.forEach(counter => {
+                counter.innerHTML = 0;
+            });
+        }
+    }
+
+   
+
+
     //transition
     new Textify({
         el: "[data-test]",
@@ -197,12 +236,24 @@
     scannerDetailInfo.addEventListener('click', function(){
         scannerDetailInfo.className = 'detailInfo hidden';
     });
+    scannerCircle.addEventListener('mouseover', function(){
+        scannerCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+    });
+    scannerCircle.addEventListener('mouseout', function(){
+        scannerCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+    });
 
     displayCircle.addEventListener('click', function(){
         displayDetailInfo.className = 'detailInfo showing';
     });
     displayDetailInfo.addEventListener('click', function(){
         displayDetailInfo.className = 'detailInfo hidden';
+    });
+    displayCircle.addEventListener('mouseover', function(){
+        displayCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+    });
+    displayCircle.addEventListener('mouseout', function(){
+        displayCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
 
     dispenseExitCircle.addEventListener('click', function(){
@@ -211,6 +262,12 @@
     dispenseExitDetailInfo.addEventListener('click', function(){
         dispenseExitDetailInfo.className = 'detailInfo hidden';
     });
+    dispenseExitCircle.addEventListener('mouseover', function(){
+        dispenseExitCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+    });
+    dispenseExitCircle.addEventListener('mouseout', function(){
+        dispenseExitCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+    });
 
     garbageDoorCircle.addEventListener('click', function(){
         garbageDoorDetailInfo.className = 'detailInfo showing';
@@ -218,7 +275,14 @@
     garbageDoorDetailInfo.addEventListener('click', function(){
         garbageDoorDetailInfo.className = 'detailInfo hidden';
     });
+    garbageDoorCircle.addEventListener('mouseover', function(){
+        garbageDoorCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+    });
+    garbageDoorCircle.addEventListener('mouseout', function(){
+        garbageDoorCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+    });
 
+    
 
     //productImpact
     let firstDoughtData = {
@@ -325,6 +389,14 @@
     });
     slideshowAfter.addEventListener('click', function(){
         slideshowImage.style.backgroundColor = getRandomRGB();
+    });
+    slideshowImage.addEventListener('mouseover', function(){
+        caption.className = 'showing';
+        console.log('something is in');
+    });
+    slideshowImage.addEventListener('mouseout', function(){
+        caption.className = 'hidden';
+        console.log('something is out');
     });
     function getRandomRGB() {
         const r = Math.floor(Math.random() * 256); // 0 to 255
