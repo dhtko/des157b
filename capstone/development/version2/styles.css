@@ -177,7 +177,6 @@ h1{
 }
 #curveGraph{
     width: 1000px;
-
     position: relative;
 }
 #elaboration h2{
@@ -195,12 +194,27 @@ h1{
 }
 #selectCountries{
     position: absolute;
-    top: 4%;
-    right: 3%;
+    top: 6%;
+    left: 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 10px;
 }
 canvas{
     padding: 15px;
     background-color: white;
+}
+#countries{
+    font-family: 'AR One Sans';
+    font-weight: 400;
+}
+#selectCountry{
+    font-family: 'AR One Sans';
+    font-weight: 400;
+
+    width: 100px;
 }
 
 

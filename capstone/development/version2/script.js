@@ -96,18 +96,18 @@
     let theWasteData = {
         type: 'line',
         data: {
-            labels: ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July'],
+            labels: ['2009', '2011', '2013', '2015', '2017', '2019', '2021'],
             datasets: [
                 {
-                    label: 'My First Dataset',
-                    data: [65, 59, 80, 81, 56, 55, 40],
+                    label: 'Total Waste Produced (Mt)',
+                    data: [243.0, 250.4, 254.1, 262.1, 267.8, 292.4, 292.4],
                     fill: false,
                     borderColor: 'rgb(75, 192, 192)',
                     tension: 0.1
                 },
                 {
-                    label: 'My Second Dataset',
-                    data: [23, 13, 66, 46, 55, 65, 80],
+                    label: 'Recycling Rate (%)',
+                    data: [33.8, 34.7, 34.3, 34.7, 35.2, 32.1, 32.1],
                     fill: false,
                     borderColor: 'rgb(248, 202, 19)',
                     tension: 0.1
@@ -173,6 +173,42 @@
             for (let j = 0; j < russiaWasteData.length; j++){
                 lineGraph.data.datasets[0].data[j] = russiaWasteData[j];
                 lineGraph.data.datasets[1].data[j] = russiaRecycleData[j];
+            }
+        }
+
+        else if (name == 'DE'){
+            const germanyWasteData = globalData.germany.wasteMass;
+            const germanyRecycleData = globalData.germany.recycleability;
+            for (let j = 0; j < germanyWasteData.length; j++){
+                lineGraph.data.datasets[0].data[j] = germanyWasteData[j];
+                lineGraph.data.datasets[1].data[j] = germanyRecycleData[j];
+            }
+        }
+
+        else if (name == 'FR'){
+            const franceWasteData = globalData.france.wasteMass;
+            const franceRecycleData = globalData.france.recycleability;
+            for (let j = 0; j < franceWasteData.length; j++){
+                lineGraph.data.datasets[0].data[j] = franceWasteData[j];
+                lineGraph.data.datasets[1].data[j] = franceRecycleData[j];
+            }
+        }
+
+        else if (name == 'CA'){
+            const canadaWasteData = globalData.canada.wasteMass;
+            const canadaRecycleData = globalData.canada.recycleability;
+            for (let j = 0; j < canadaWasteData.length; j++){
+                lineGraph.data.datasets[0].data[j] = canadaWasteData[j];
+                lineGraph.data.datasets[1].data[j] = canadaRecycleData[j];
+            }
+        }
+
+        else if (name == 'JP'){
+            const japanWasteData = globalData.japan.wasteMass;
+            const japanRecycleData = globalData.japan.recycleability;
+            for (let j = 0; j < japanWasteData.length; j++){
+                lineGraph.data.datasets[0].data[j] = japanWasteData[j];
+                lineGraph.data.datasets[1].data[j] = japanRecycleData[j];
             }
         }
     }
