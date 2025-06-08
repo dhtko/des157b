@@ -41,6 +41,10 @@
     const speed = 200;
     const counters = document.querySelectorAll('.points');
 
+    let slideshowChecker = 0;
+    const slideImages = ['placeholder1.jpg', 'placeholder2.jpg', 'placeholder3.jpg', 'placeholder4.jpg', 'placeholder5.jpg'];
+    const slideImg = document.querySelector('#slideshowImg');
+
 
     
 
@@ -422,10 +426,28 @@
     //narrativeSpeculativeWorld
     slideshowBefore.addEventListener('click', function(){
         slideshowImage.style.backgroundColor = getRandomRGB();
+        
+        slideshowChecker--;
+        console.log(slideshowChecker);
+        if (slideshowChecker < 0){
+            slideshowChecker = slideImages.length - 1;
+        }
+
+        slideImg.src = `images/${slideImages[slideshowChecker]}`;
+
     });
     slideshowAfter.addEventListener('click', function(){
         slideshowImage.style.backgroundColor = getRandomRGB();
+        
+        slideshowChecker++;
+        console.log(slideshowChecker);
+        if (slideshowChecker > slideImages.length - 1){
+            slideshowChecker = 0;
+        }
+
+        slideImg.src = `images/${slideImages[slideshowChecker]}`;
     });
+
     slideshowImage.addEventListener('mouseover', function(){
         caption.className = 'showing';
         console.log('something is in');
@@ -440,4 +462,5 @@
         const b = Math.floor(Math.random() * 256);
         return `rgb(${r}, ${g}, ${b})`;             
     }
+
 })();
