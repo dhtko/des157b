@@ -93,7 +93,6 @@
             event.preventDefault();
             
             currentSection++;
-            console.log(currentSection);
             
             if (currentSection > sections.length){
                 currentSection = sections.length - 1;
@@ -137,7 +136,6 @@
             event.preventDefault();
             
             currentSection--;
-            console.log(currentSection);
             
             switch (currentSection){
                 case 0:
@@ -481,7 +479,6 @@
     });
     function updateDoughnut(theYear){
         let theDiff = theYear - yearRaw.min;
-        console.log(theDiff);
 
         firstDoughnut.data.datasets[0].data[0] = 5 + (theDiff * 1.5);
         firstDoughnut.data.datasets[0].data[1] = 35 - (theDiff * 0.2);
@@ -549,7 +546,6 @@
     });
     slideshowImage.addEventListener('mouseout', function(){
         caption.className = 'hidden';
-        console.log('something is out');
     });
 
 
