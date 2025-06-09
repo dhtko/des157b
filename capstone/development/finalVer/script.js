@@ -5,55 +5,55 @@
 
     let globalData;
 
-    const scannerCircle = document.querySelector('#scanner');
-    const displayCircle = document.querySelector('#display');
-    const dispenseExitCircle = document.querySelector('#dispenseExit');
-    const garbageDoorCircle = document.querySelector('#garbageDoor');
-
-    const scannerDetailInfo = document.querySelector('#scannerDetail');
-    const displayDetailInfo = document.querySelector('#displayDetail');
-    const dispenseExitDetailInfo = document.querySelector('#dispenseExitDetail');
-    const garbageDoorDetailInfo = document.querySelector('#garbageDoorDetail');
-
-    const slideshowBefore = document.querySelector('#before');
-    const slideshowAfter = document.querySelector('#after');
-    const slideshowImage = document.querySelector('#slideshow');
-    const caption = document.querySelector('#caption');
-
     const introHeader = document.querySelector('header');
     const bags = document.querySelectorAll('.garbageBag');
     const centerText = document.querySelector('#centerText');
     let counter = 0;
-
-    const ctx = document.querySelector('#myChart');
-    const selectCountry = document.querySelector('#selectCountry');
-
-    const doughnut1 = document.querySelector('#doughnut1');
-    const doughnut2 = document.querySelector('#doughnut2');
-    const doughnut3 = document.querySelector('#doughnut3');
-    let yearRaw = document.querySelector('#year');
-
-    new Textify({}, gsap);
+    const headToMain = document.querySelector('#headToMain');
 
     let currentSection = -1;
     const sections = document.querySelectorAll('section');
-
-    const speed = 200;
-    const counters = document.querySelectorAll('.points');
-
-    let slideshowChecker = 0;
-    const slideImages = ['narrativePic1.png', 'narrativePic2.png', 'narrativePic3.png', 'narrativePic4.png'];
-    const slideImg = document.querySelector('#slideshowImg');
-
-
     const section0 = document.querySelector('#elaboration');
     const section1 = document.querySelector('#impactPoint');
     const section2 = document.querySelector('#transition');
     const section3 = document.querySelector('#productInfo');
     const section4 = document.querySelector('#productImpact');
     const section5 = document.querySelector('#speculativeWorld');
+    const section6 = document.querySelector('#ending');
 
-    
+    const ctx = document.querySelector('#myChart');
+    const selectCountry = document.querySelector('#selectCountry');
+
+    const speed = 200;
+    const counters = document.querySelectorAll('.points');
+
+    new Textify({}, gsap);
+
+    const scannerCircle = document.querySelector('#scanner');
+    const displayCircle = document.querySelector('#display');
+    const dispenseExitCircle = document.querySelector('#dispenseExit');
+    const garbageDoorCircle = document.querySelector('#garbageDoor');
+    const scannerDetailInfo = document.querySelector('#scannerDetail');
+    const displayDetailInfo = document.querySelector('#displayDetail');
+    const dispenseExitDetailInfo = document.querySelector('#dispenseExitDetail');
+    const garbageDoorDetailInfo = document.querySelector('#garbageDoorDetail');
+
+    const doughnut1 = document.querySelector('#doughnut1');
+    const doughnut2 = document.querySelector('#doughnut2');
+    const doughnut3 = document.querySelector('#doughnut3');
+    let yearRaw = document.querySelector('#year');
+
+    const slideshowBefore = document.querySelector('#before');
+    const slideshowAfter = document.querySelector('#after');
+    const slideshowImage = document.querySelector('#slideshow');
+    const caption = document.querySelector('#caption');
+    let slideshowChecker = 0;
+    const slideImages = ['narrativePic1.png', 'narrativePic2.png', 'narrativePic3.png', 'narrativePic4.png'];
+    const slideImg = document.querySelector('#slideshowImg');
+    let captionText = document.querySelector('#captionText');
+
+
+
 
     //introHeader
     //disableScroll();
@@ -71,7 +71,9 @@
             centerText.innerHTML = 'THIS IS Our Future';
             centerText.style.color = 'white';
             centerText.style.fontSize = '75px';
+            centerText.style.textShadow = '2px 2px 4px rgba(0,0,0,0.44);';
             centerText.className = 'showing';
+            headToMain.className = 'showing';
             enableScroll();
         }
     });
@@ -83,25 +85,11 @@
     }
 
 
-
     //scrollbySection
-    /*window.addEventListener('wheel', (event) => {
-        if (event.deltaY > 0 && currentSection < sections.length - 1) {
-            currentSection++;
-            console.log('currentsection: ', currentSection);
-            sections[currentSection].scrollIntoView({ behavior: 'smooth' });
-            numCounter(currentSection); //for number counter animation
-        } 
-        else if (event.deltaY < 0 && currentSection > 0) {
-            currentSection--;
-            console.log('currentsection: ', currentSection);
-            sections[currentSection].scrollIntoView({ behavior: 'smooth' });
-            numCounter(currentSection); //for number counter animation
-        }
-    });*/
-
     window.addEventListener('keydown', (event) => {
         if (event.code === 'ArrowDown'){
+            event.preventDefault();
+            
             currentSection++;
             console.log(currentSection);
             
@@ -111,27 +99,31 @@
 
             switch (currentSection){
                 case 0:
-                    section0.scrollIntoView();
+                    section0.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 1:
-                    section1.scrollIntoView();
+                    section1.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 2:
-                    section2.scrollIntoView();
+                    section2.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 3:
-                    section3.scrollIntoView();
+                    section3.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 4:
-                    section4.scrollIntoView();
+                    section4.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 5:
-                    section5.scrollIntoView();
+                    section5.scrollIntoView( {behavior: 'smooth'} );
+                    numCounter(currentSection);
+                    break;
+                case 6:
+                    section6.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
             }
@@ -140,32 +132,38 @@
             
         }
         else if (event.code === 'ArrowUp'){
+            event.preventDefault();
+            
             currentSection--;
             console.log(currentSection);
             
             switch (currentSection){
                 case 0:
-                    section0.scrollIntoView();
+                    section0.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 1:
-                    section1.scrollIntoView();
+                    section1.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 2:
-                    section2.scrollIntoView();
+                    section2.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 3:
-                    section3.scrollIntoView();
+                    section3.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 4:
-                    section4.scrollIntoView();
+                    section4.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
                 case 5:
-                    section5.scrollIntoView();
+                    section5.scrollIntoView( {behavior: 'smooth'} );
+                    numCounter(currentSection);
+                    break;
+                case 6:
+                    section6.scrollIntoView( {behavior: 'smooth'} );
                     numCounter(currentSection);
                     break;
             }
@@ -175,11 +173,6 @@
             }
         }
     });
-
-
-
-
-
 
 
     //recyclability+wasteProduction    
@@ -213,7 +206,6 @@
         }
     }
     let lineGraph = new Chart(ctx, theWasteData);
-    //console.log(lineGraph.data.datasets[0].data[0]);
 
     async function getData(){
         const totalData = await fetch('./data.json');
@@ -304,7 +296,6 @@
     }
 
 
-
     //largeImpactNumber
     function numCounter(currentSection){
         
@@ -336,15 +327,13 @@
     }
 
    
-
-
     //transition
     new Textify({
-        el: "[data-test]",
+        el: "[data-test2]",
         animation: {
             stagger: 0.025,
             duration: 0.7,
-            delay: 5.0,
+            delay: 2.0,
             ease: 'expo.inOut',
             animateProps: {
                 "opacity": 0,
@@ -353,8 +342,7 @@
         }
     }, gsap);
    
-
-    
+ 
     //productInformation
     scannerCircle.addEventListener('click', function(){
         scannerDetailInfo.className = 'detailInfo showing'
@@ -363,10 +351,10 @@
         scannerDetailInfo.className = 'detailInfo hidden';
     });
     scannerCircle.addEventListener('mouseover', function(){
-        scannerCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+        scannerCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     scannerCircle.addEventListener('mouseout', function(){
-        scannerCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+        scannerCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
     });
 
     displayCircle.addEventListener('click', function(){
@@ -376,10 +364,10 @@
         displayDetailInfo.className = 'detailInfo hidden';
     });
     displayCircle.addEventListener('mouseover', function(){
-        displayCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+        displayCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     displayCircle.addEventListener('mouseout', function(){
-        displayCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+        displayCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
     });
 
     dispenseExitCircle.addEventListener('click', function(){
@@ -389,10 +377,10 @@
         dispenseExitDetailInfo.className = 'detailInfo hidden';
     });
     dispenseExitCircle.addEventListener('mouseover', function(){
-        dispenseExitCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+        dispenseExitCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     dispenseExitCircle.addEventListener('mouseout', function(){
-        dispenseExitCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+        dispenseExitCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
     });
 
     garbageDoorCircle.addEventListener('click', function(){
@@ -402,14 +390,13 @@
         garbageDoorDetailInfo.className = 'detailInfo hidden';
     });
     garbageDoorCircle.addEventListener('mouseover', function(){
-        garbageDoorCircle.style.backgroundColor = 'rgb(43, 43, 43)';
+        garbageDoorCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     garbageDoorCircle.addEventListener('mouseout', function(){
-        garbageDoorCircle.style.backgroundColor = 'rgb(128, 128, 128)';
+        garbageDoorCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
     });
 
     
-
     //productImpact
     let firstDoughtData = {
         type: 'doughnut',
@@ -420,9 +407,9 @@
                     label: 'Food Source Composition',
                     data: [5, 30, 30],
                     backgroundColor: [
-                        'rgb(251, 44, 0)',
-                        'rgb(251, 122, 0)',
-                        'rgb(251, 210, 0)'
+                        'rgb(236, 64, 122)',
+                        'rgb(120, 144, 156)',
+                        'rgb(64, 64, 64)'
                     ],
                     hoverOffset: 4
                 }
@@ -441,9 +428,9 @@
                     label: 'Waste Stream Composition',
                     data: [5, 30, 65],
                     backgroundColor: [
-                        'rgb(0, 193, 50)',
-                        'rgb(128, 0, 193)',
-                        'rgb(251, 122, 0)'
+                        'rgb(255, 179, 0)',
+                        'rgb(149, 147, 146)',
+                        'rgb(21, 21, 21)'
                     ],
                     hoverOffset: 4
                 }
@@ -462,9 +449,9 @@
                     label: 'Land Use Distribution',
                     data: [0, 30, 70],
                     backgroundColor: [
-                        'rgb(251, 210, 0)',
-                        'rgb(79, 73, 251)',
-                        'rgb(215, 191, 143)'
+                        'rgb(104, 159, 56)',
+                        'rgb(87, 53, 24)',
+                        'rgb(48, 55, 59)'
                     ],
                     hoverOffset: 4
                 }
@@ -508,13 +495,9 @@
     }
 
 
-
     //narrativeSpeculativeWorld
     slideshowBefore.addEventListener('click', function(){
-        slideshowImage.style.backgroundColor = getRandomRGB();
-        
         slideshowChecker--;
-        console.log(slideshowChecker);
         if (slideshowChecker < 0){
             slideshowChecker = slideImages.length - 1;
         }
@@ -522,30 +505,66 @@
         slideImg.src = `images/${slideImages[slideshowChecker]}`;
 
     });
+    slideshowBefore.addEventListener('mouseover', function(){
+        slideshowBefore.style.borderColor = 'transparent rgba(0, 255, 234, 0.97) transparent transparent';
+    });
+    slideshowBefore.addEventListener('mouseout', function(){
+        slideshowBefore.style.borderColor = 'transparent #434343a1 transparent transparent';
+    });
+
     slideshowAfter.addEventListener('click', function(){
-        slideshowImage.style.backgroundColor = getRandomRGB();
-        
         slideshowChecker++;
-        console.log(slideshowChecker);
         if (slideshowChecker > slideImages.length - 1){
             slideshowChecker = 0;
         }
 
         slideImg.src = `images/${slideImages[slideshowChecker]}`;
     });
+    slideshowAfter.addEventListener('mouseover', function(){
+        slideshowAfter.style.borderColor = 'transparent transparent transparent rgba(0, 255, 234, 0.97)';
+    });
+    slideshowAfter.addEventListener('mouseout', function(){
+        slideshowAfter.style.borderColor = 'transparent transparent transparent #434343a1';
+    });
 
     slideshowImage.addEventListener('mouseover', function(){
         caption.className = 'showing';
+
+        switch (slideshowChecker){
+            case 0:
+                captionText.innerHTML = 'Detailed sketch of the food packet produced by FlavorNeutral5000. The back of the container has a straw, and the inside is a gray liquid with nutrient capsules that are catered to individuals.'
+                break;
+            case 1:
+                captionText.innerHTML = 'Detailed sketch of a citizen consuming the packet. Note how the one uses the straw to drink the liquid. Also, observe the facial expression: depressed and gloomy.'
+                break;
+            case 2:
+                captionText.innerHTML = 'Detailed sketch of the world where FlavorNetural5000 becomes popular. The key characteristic of this sketch is the grey tone because the constant consumption from the food packet induced various mental distresss like depression and lethargy.'
+                break;
+            case 3:
+                captionText.innerHTML = 'Detailed sketch of a possible crime scene. This particular sketch depicted how the people are eagered to steal the garbage from a person in order to acquire the food from flavorNeutral5000. The white eyes compared to the dark enviroment captures their will to steal the garbage bag for their survival.'
+                break;
+        }
     });
     slideshowImage.addEventListener('mouseout', function(){
         caption.className = 'hidden';
         console.log('something is out');
     });
-    function getRandomRGB() {
-        const r = Math.floor(Math.random() * 256); // 0 to 255
-        const g = Math.floor(Math.random() * 256);
-        const b = Math.floor(Math.random() * 256);
-        return `rgb(${r}, ${g}, ${b})`;             
-    }
+
+
+    //ending
+    new Textify({
+        el: "[data-test]",
+        animation: {
+            stagger: 0.025,
+            duration: 0.7,
+            delay: 2.0,
+            ease: 'expo.inOut',
+            animateProps: {
+                "opacity": 0,
+                "scale": 0
+            }
+        }
+    }, gsap);
+
 
 })();

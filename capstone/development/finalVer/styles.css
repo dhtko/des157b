@@ -159,13 +159,24 @@ h1{
     width: 170px;
     height: 170px;
 }
+#headToMain{
+    display: block;
+    width: 3%;
+    
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
 
+    transform: translate(-50%, 0%);
+}
+
+
+/*scrollingEffect*/
 main{
     scroll-snap-type: y mandatory;
 }
-
 section{
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 
@@ -173,7 +184,7 @@ section{
 #elaboration{
     height: 100vh;
 
-    background-color: #787878;
+    background-color: rgb(140, 140, 140);
     color: rgb(244, 244, 244);
 
     display: flex;
@@ -198,7 +209,7 @@ section{
 #elaboration p{
     font-family: 'AR One Sans';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
 }
 #selectCountries{
     position: absolute;
@@ -213,6 +224,8 @@ section{
 #myChart{
     padding: 15px;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 #countries{
     font-family: 'AR One Sans';
@@ -223,14 +236,35 @@ section{
     font-weight: 400;
 
     width: 100px;
-}
 
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+#selectCountry:hover {
+  background-color: #e4e5e7;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
 
 
 /*largeNumberBigImpact*/
 #impactPoint{
     height: 100vh;
-    background-color: rgb(163, 163, 163);
+    background: #8c8c8c;
+    background: linear-gradient(180deg, rgba(140, 140, 140, 1) 0%, rgba(66, 66, 66, 1) 100%);
 
     text-align: center;
     
@@ -257,6 +291,8 @@ section{
 #point1, #point2, #point3{
     font-weight: 700;
     font-size: 100px;
+
+    color: rgb(115, 215, 33);
 }
 #pointGroups h3{
     font-family: "Noto Sans";
@@ -265,6 +301,8 @@ section{
     
     margin-top: 20px;
     margin-bottom: 0px;
+
+    color: rgb(18, 159, 72);
 }
 #pointGroups em{
     font-family: "AR One Sans";
@@ -275,12 +313,15 @@ section{
     font-family: "Noto Sans";
     font-weight: 400;
     font-size: 20px;
+
+    color: rgb(18, 159, 72);
 }
+
 
 /*bridgeSection*/
 #transition{
     height: 100vh;
-    background-color: rgb(112, 112, 112);
+    background-color: #424242;
     color: rgb(237, 237, 237);
     
     text-align: center;
@@ -292,20 +333,24 @@ section{
 #transition h2, #transition p{
     font-family: 'AR One Sans';
     font-weight: 700;
-    font-size: 55px;
 }
 #transition h2{
+    font-size: 70px;
     margin-bottom: 0px;
+
+    color: rgb(178, 178, 178);
 }
 #transition p{
+    font-size: 60px;
     margin-top: 0px;
+    color: rgb(200, 200, 200);
 }
 #transition em{
     font-family: 'AR One Sans';
     font-weight: 700;
-    font-size: 120px;
+    font-size: 150px;
+    color: #90dc84;
 }
-
 
 
 /*productRelatedPage*/
@@ -316,6 +361,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 
     position: relative;
@@ -325,23 +371,28 @@ section{
 
     font-family: 'AR One Sans';
     font-weight: 400;
-    font-size: 40px;
+    font-size: 60px;
 }
 #productInfo em{
     font-family: 'AR One Sans';
     font-weight: 600;
-    font-size: 40px;
+    font-size: 60px;
 }
 #productInfo h3{
     margin-top: 15px;
 
     font-family: 'AR One Sans';
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
+}
+#centerText p{
+    font-family: 'AR One Sans';
+    font-weight: 300;
+    font-size: 16px;
 }
 #productImg{
     display: block;
-    width: 70%;
+    width: 60%;
 }
 .hoverCircle{
     border-radius: 50px;
@@ -417,8 +468,6 @@ section{
 }
 
 
-
-
 /*pieChartSlideBarChange*/
 #productImpact{
     height: 100vh;
@@ -431,12 +480,11 @@ section{
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     align-items: center;
-    
+    justify-content: center;
 }
 #productImpact h2{
-    margin-top: 30px;
+    margin-top: 0px;
 
     font-family: 'AR One Sans';
     font-weight: 500;
@@ -463,22 +511,21 @@ section{
 }
 
 
-
 /*narrative*/
 #speculativeWorld{
     height: 100vh;
     background-color: #9FFFEF;
-    padding: 30px;
+    padding: 0px;
 
     display: flex;
-    gap: 50px;
+    gap: 70px;
     justify-content: center;
     align-items: center;
 }
 #slideshow{
     width: 950px;
     height: 75vh;
-    background-color: rebeccapurple;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 30px;
 
     position: relative;
@@ -494,7 +541,6 @@ section{
    height: 0px;
    border-style: solid;
    border-width: 22.5px 41px 22.5px 0;
-   border-color: transparent #4852FF transparent transparent;
    transform: rotate(0deg);
 
    position: absolute;
@@ -506,7 +552,7 @@ section{
    height: 0px;
    border-style: solid;
    border-width: 22.5px 0 22.5px 41px;
-   border-color: transparent transparent transparent #4852FF;
+   border-color: transparent transparent transparent #434343a1;
    transform: rotate(0deg);
 
    position: absolute;
@@ -514,14 +560,15 @@ section{
    right: 3%;
 }
 #caption{
-    height: 100px;
+    height: 30px;
     background-color: rgba(119, 119, 119, 0.67);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
     position: absolute;
     bottom: 0%;
-    width: 950px;
+    width: 890px;
+    padding: 30px;
 
     display: flex;
     align-items: center;
@@ -530,16 +577,11 @@ section{
 #captionText{
     font-family: 'AR One Sans';
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(247, 247, 247);
 }
 #narrativeText{
     width: 700px;
-    height: 75vh;
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-
-    padding: 20px;
 }
 #narrativeText h2{
     font-family: 'AR One Sans';
@@ -552,10 +594,46 @@ section{
 #narrativeText p{
     font-family: 'AR One Sans';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 
     margin-bottom: 0px;
 }
+
+
+/*endingScene*/
+#ending{
+    height: 100vh;
+    background: #9FFFEF;
+    background: linear-gradient(180deg, rgba(159, 255, 239, 1) 0%, rgba(48, 120, 108, 1) 50%, rgba(12, 48, 38, 1) 100%);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding: 0px;
+}
+#ending h2{
+    font-family: 'AR One Sans';
+    font-weight: 700;
+    font-size: 96px;
+    color: rgb(64, 173, 124);
+    text-shadow: 1px 4px 6px rgba(0,0,0,0.34);
+
+    margin-top: 0px;
+}
+#ending h3{
+    font-family: 'AR One Sans';
+    font-weight: 400;
+    font-size: 48px;
+    color: rgb(133, 198, 36);
+
+    margin-bottom: 0px;
+}
+
 
 /*onOFF*/
 .hidden{
