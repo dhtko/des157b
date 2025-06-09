@@ -10,6 +10,7 @@
     const centerText = document.querySelector('#centerText');
     let counter = 0;
     const headToMain = document.querySelector('#headToMain');
+    const insturction = document.querySelector('#headInstruction');
 
     let currentSection = -1;
     const sections = document.querySelectorAll('section');
@@ -74,6 +75,7 @@
             centerText.style.textShadow = '2px 2px 4px rgba(0,0,0,0.44);';
             centerText.className = 'showing';
             headToMain.className = 'showing';
+            insturction.className = 'showing';
             enableScroll();
         }
     });
