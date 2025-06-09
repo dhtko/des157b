@@ -476,6 +476,8 @@ h1{
     position: relative;
 }
 #slideshowImg{
+    width: 100%;
+    
     border-bottom-left-radius: 30px;
 }
 #before{

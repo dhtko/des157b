@@ -42,7 +42,7 @@
     const counters = document.querySelectorAll('.points');
 
     let slideshowChecker = 0;
-    const slideImages = ['placeholder1.jpg', 'placeholder2.jpg', 'placeholder3.jpg', 'placeholder4.jpg', 'placeholder5.jpg'];
+    const slideImages = ['narrativePic1.png', 'narrativePic2.png', 'narrativePic3.png', 'narrativePic4.png'];
     const slideImg = document.querySelector('#slideshowImg');
 
 
