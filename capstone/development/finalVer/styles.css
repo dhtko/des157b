@@ -222,7 +222,7 @@ section{
 }
 #selectCountries{
     position: absolute;
-    top: 6%;
+    top: 8%;
     left: 8%;
 
     display: flex;
@@ -288,7 +288,7 @@ section{
 
     font-family: "AR One Sans";
     font-weight: 600;
-    font-size: 50px;
+    font-size: 68px;
 
     color: #e9e9e9;
 }
@@ -299,7 +299,7 @@ section{
 }
 #point1, #point2, #point3{
     font-weight: 700;
-    font-size: 100px;
+    font-size: 150px;
 
     color: rgb(115, 215, 33);
 }
@@ -321,7 +321,7 @@ section{
 #pointGroups p{
     font-family: "Noto Sans";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 26px;
 
     color: rgb(18, 159, 72);
 }
@@ -405,29 +405,29 @@ section{
 }
 .hoverCircle{
     border-radius: 50px;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(132, 132, 132, 0.556);
+    width: 35px;
+    height: 35px;
+    background-color: rgb(236, 236, 236);
 }
 #scanner{
     position: absolute;
-    top: 9.5%;
-    left: 22%;
+    top: 44.5%;
+    left: 30%;
 }
 #display{
     position: absolute;
-    top: 7%;
-    right: 22%;
+    top: 37.5%;
+    right: 32%;
 }
 #dispenseExit{
     position: absolute;
-    top: 13%;
-    right: 38%;
+    top: 45%;
+    right: 41%;
 }
 #garbageDoor{
     position: absolute;
-    top: 27%;
-    right: 29%;
+    bottom: 25%;
+    right: 40%;
 }
 .detailInfo{
     width: 300px;
@@ -450,12 +450,12 @@ section{
 #scannerDetail{
     position: absolute;
     top: 11%;
-    left: 24%;
+    left: 31%;
 }
 #displayDetail{
     position: absolute;
-    top: 8.5%;
-    right: 5%;
+    top: 10.5%;
+    right: 33%;
 
     height: 270px;
 }
@@ -464,8 +464,8 @@ section{
 }
 #dispenseExitDetail{
     position: absolute;
-    top: 15%;
-    right: 21%;
+    top: 46.5%;
+    right: 42%;
 
     height: 220px;
 }
@@ -474,8 +474,8 @@ section{
 }
 #garbageDoorDetail{
     position: absolute;
-    top: 28.5%;
-    right: 31%;
+    bottom: 27%;
+    right: 41%;
 
     height: 300px;
 }

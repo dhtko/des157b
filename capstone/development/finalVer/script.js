@@ -356,7 +356,7 @@
         scannerCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     scannerCircle.addEventListener('mouseout', function(){
-        scannerCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
+        scannerCircle.style.backgroundColor = 'rgb(236, 236, 236)';
     });
 
     displayCircle.addEventListener('click', function(){
@@ -369,7 +369,7 @@
         displayCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     displayCircle.addEventListener('mouseout', function(){
-        displayCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
+        displayCircle.style.backgroundColor = 'rgb(236, 236, 236)';
     });
 
     dispenseExitCircle.addEventListener('click', function(){
@@ -382,7 +382,7 @@
         dispenseExitCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     dispenseExitCircle.addEventListener('mouseout', function(){
-        dispenseExitCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
+        dispenseExitCircle.style.backgroundColor = 'rgb(236, 236, 236)';
     });
 
     garbageDoorCircle.addEventListener('click', function(){
@@ -395,7 +395,7 @@
         garbageDoorCircle.style.backgroundColor = 'rgb(128, 128, 128)';
     });
     garbageDoorCircle.addEventListener('mouseout', function(){
-        garbageDoorCircle.style.backgroundColor = 'rgba(132, 132, 132, 0.556)';
+        garbageDoorCircle.style.backgroundColor = 'rgb(236, 236, 236)';
     });
 
     
