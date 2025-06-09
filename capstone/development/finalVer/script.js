@@ -304,7 +304,7 @@
         if (currentSection === 1){
             counters.forEach( counter => {
                 const animate = () => {
-                    const value =+ counter.getAttribute('akhi');
+                    const value =+ counter.getAttribute('data-final');
                     const data =+ counter.innerText;
         
                     const time = value / speed;

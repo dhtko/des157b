@@ -227,7 +227,7 @@ section{
 
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: start;
     gap: 10px;
 }
 #myChart{
@@ -394,7 +394,7 @@ section{
     font-weight: 400;
     font-size: 30px;
 }
-#centerText p{
+#productCenterText p{
     font-family: 'AR One Sans';
     font-weight: 300;
     font-size: 16px;
@@ -495,7 +495,7 @@ section{
     font-weight: 400;
     font-size: 16px;
 }
-#centerText{
+#productCenterText{
     text-align: center;
 }
 
