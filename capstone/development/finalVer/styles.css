@@ -160,7 +160,13 @@ h1{
     height: 170px;
 }
 
+main{
+    scroll-snap-type: y mandatory;
+}
 
+section{
+    scroll-snap-align: start;
+}
 
 
 /*curveGraphInteraction*/
@@ -170,11 +176,12 @@ h1{
     background-color: #787878;
     color: rgb(244, 244, 244);
 
-    padding: 30px 50px;
-
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 30px;
 }
 #curveGraph{
     width: 1000px;
@@ -222,7 +229,7 @@ h1{
 
 /*largeNumberBigImpact*/
 #impactPoint{
-    height: 50vh;
+    height: 100vh;
     background-color: rgb(163, 163, 163);
 
     text-align: center;
@@ -272,7 +279,7 @@ h1{
 
 /*bridgeSection*/
 #transition{
-    height: 50vh;
+    height: 100vh;
     background-color: rgb(112, 112, 112);
     color: rgb(237, 237, 237);
     
@@ -465,20 +472,22 @@ h1{
 
     display: flex;
     gap: 50px;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 #slideshow{
-    width: 736px;
-    height: 85vh;
+    width: 950px;
+    height: 75vh;
     background-color: rebeccapurple;
     border-radius: 30px;
 
     position: relative;
 }
 #slideshowImg{
-    width: 100%;
+    width: 950px;
+    height: 75vh;
     
-    border-bottom-left-radius: 30px;
+    border-radius: 30px;
 }
 #before{
    width: 0px;
@@ -512,7 +521,7 @@ h1{
 
     position: absolute;
     bottom: 0%;
-    width: 736px;
+    width: 950px;
 
     display: flex;
     align-items: center;
@@ -521,12 +530,12 @@ h1{
 #captionText{
     font-family: 'AR One Sans';
     font-weight: 300;
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(247, 247, 247);
 }
 #narrativeText{
-    width: 736px;
-    height: 85vh;
+    width: 700px;
+    height: 75vh;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 
@@ -537,12 +546,15 @@ h1{
     font-weight: 600;
     font-size: 36px;
 
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 #narrativeText p{
     font-family: 'AR One Sans';
     font-weight: 400;
     font-size: 20px;
+
+    margin-bottom: 0px;
 }
 
 /*onOFF*/

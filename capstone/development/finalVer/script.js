@@ -35,7 +35,7 @@
 
     new Textify({}, gsap);
 
-    let currentSection = 0;
+    let currentSection = -1;
     const sections = document.querySelectorAll('section');
 
     const speed = 200;
@@ -45,6 +45,13 @@
     const slideImages = ['narrativePic1.png', 'narrativePic2.png', 'narrativePic3.png', 'narrativePic4.png'];
     const slideImg = document.querySelector('#slideshowImg');
 
+
+    const section0 = document.querySelector('#elaboration');
+    const section1 = document.querySelector('#impactPoint');
+    const section2 = document.querySelector('#transition');
+    const section3 = document.querySelector('#productInfo');
+    const section4 = document.querySelector('#productImpact');
+    const section5 = document.querySelector('#speculativeWorld');
 
     
 
@@ -78,7 +85,7 @@
 
 
     //scrollbySection
-    window.addEventListener('wheel', (event) => {
+    /*window.addEventListener('wheel', (event) => {
         if (event.deltaY > 0 && currentSection < sections.length - 1) {
             currentSection++;
             console.log('currentsection: ', currentSection);
@@ -91,7 +98,86 @@
             sections[currentSection].scrollIntoView({ behavior: 'smooth' });
             numCounter(currentSection); //for number counter animation
         }
+    });*/
+
+    window.addEventListener('keydown', (event) => {
+        if (event.code === 'ArrowDown'){
+            currentSection++;
+            console.log(currentSection);
+            
+            if (currentSection > sections.length){
+                currentSection = sections.length - 1;
+            }
+
+            switch (currentSection){
+                case 0:
+                    section0.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 1:
+                    section1.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 2:
+                    section2.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 3:
+                    section3.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 4:
+                    section4.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 5:
+                    section5.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+            }
+
+            
+            
+        }
+        else if (event.code === 'ArrowUp'){
+            currentSection--;
+            console.log(currentSection);
+            
+            switch (currentSection){
+                case 0:
+                    section0.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 1:
+                    section1.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 2:
+                    section2.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 3:
+                    section3.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 4:
+                    section4.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+                case 5:
+                    section5.scrollIntoView();
+                    numCounter(currentSection);
+                    break;
+            }
+
+            if (currentSection < 0){
+                currentSection = 0;
+            }
+        }
     });
+
+
+
 
 
 
@@ -450,7 +536,6 @@
 
     slideshowImage.addEventListener('mouseover', function(){
         caption.className = 'showing';
-        console.log('something is in');
     });
     slideshowImage.addEventListener('mouseout', function(){
         caption.className = 'hidden';
