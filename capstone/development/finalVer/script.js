@@ -328,7 +328,7 @@
         }
     }
 
-   
+
     //transition
     new Textify({
         el: "[data-test2]",
