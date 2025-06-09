@@ -223,7 +223,6 @@
 
         for (let i = 0; i < document.querySelector('#countries').length; i++){
             if (output == document.querySelector('#countries')[i].value){
-                //console.log(`Internal match: ${output} = ${document.querySelector('#countries')[i].value}`);
                 updateValue(output);
             }
         }
