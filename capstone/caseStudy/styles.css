@@ -42,7 +42,7 @@ header, section, footer {
 
 section:nth-child(even){
     background-color: #588157;
-    color: #c3ded1
+    color: #c3ded1;
 }
 
 .container {
@@ -114,6 +114,9 @@ img {
 a{
     text-decoration: none;
     color: #344E41;
+}
+#research a{
+    color: #c3ded1;
 }
 
 p, ol li, ul li, a{
