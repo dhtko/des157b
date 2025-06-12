@@ -16,24 +16,24 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    color: #344E41;
+    background-color: #A3B18A;
 }
 nav {
-    border-top: 2px solid #333;
+    border-top: 2px solid #344E41;
 }
 nav ul li a {
     text-decoration: none;
     display: block;
-    color:cornflowerblue;
+    color:#344E41;
     font-weight: bold;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #344E41;
     text-align: center;
     padding: 10px;
-
 }
 
 header, footer {
-    background-color: rgb(235, 235, 235);
+    background-color: #DAD7CD;
 }
 
 header, section, footer {
@@ -41,20 +41,40 @@ header, section, footer {
 }
 
 section:nth-child(even){
-    background-color: aliceblue;
+    background-color: #588157;
+    color: #c3ded1
 }
 
 .container {
     max-width: 1000px;
 }
 
+.analysisSection{
+    background-color: #3A5A40;
+
+    padding: 15px;
+    border-radius: 15px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
 h1, h2 {
     margin-bottom: .5em;
 }
+h1{
+    font-family: 'Instrument Sans';
+    font-size: 35px;
+}
+h2{
+    font-family: 'League Spartan';
+    font-size: 28px;
+}
+
 
 p {
     line-height: 1.4em;
-    margin-bottom: 1em;
+    margin-bottom: 0px;
 }
 
 ol li {
@@ -63,6 +83,20 @@ ol li {
 
 img {
     margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #344E41;
+}
+
+p, ol li, a{
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+em{
+    font-family: 'League Spartan';
+    font-size: 24px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -77,8 +111,8 @@ img {
         margin: auto;
     }
     .content { 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 }

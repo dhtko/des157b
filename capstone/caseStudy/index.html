@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Case Study Template - put your title here</title>
+    <title>Capstone Project Case Study</title>
 
     <!--/ /-------- Normalize CSS --------/ /-->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 	
 	<!--/ /-------- Google Fonts --------/ /-->
-    <!-- add any google fonts you want to use -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,700;1,700&family=League+Spartan:wght@500&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 	
 	<!--/ /-------- Font Awesome --------/ /-->
     <!--Add this if you want icons from font awesome
@@ -24,9 +26,12 @@
 <body>
     <header id="top">
         <div class="container">
-            <h1>UX/UI Case Study Title Here</h1>
+            <h1>Speculating Circular Waste: <br>An Interactive Story of Eating Trash with 3D Food Printers</h1>
             <p>Tony (Dong Hoon) Ko</p>
-            <address>Your email address (encoded so you don't get spam)</address>
+            <address>
+                <a href="mailto:&#116;&#111;&#110;&#121;&#046;&#107;&#111;&#048;&#052;&#050;&#057;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"> tony.ko0429@gmail.com</a>
+
+            </address>
         </div>
     </header>
     <nav>
@@ -78,25 +83,29 @@
                     Before developing the website, I have to resolve two major design problems. Therefore, I conducted two comparative analyses to gain the design solutions.
                 </p>
 
-                <p>
-                    <em>1st website</em><br>
+                <div class="analysisSection">
+                    <p>
+                        <em>1st website</em>
 
-                    <br>First website that I analyzed is materialflows.net, a website that introduces the circular economy and provides an interactive tool that visualizes circularity. Analyzing this website allowed me to gain a solution of using an infographic (line graph in this website) to display effectively and efficiently.<br> 
+                        <br>First website that I analyzed is materialflows.net, a website that introduces the circular economy and provides an interactive tool that visualizes circularity. Analyzing this website allowed me to gain a solution of using an infographic (line graph in this website) to display effectively and efficiently.<br> 
 
-                    <br>One of the major problems when I designed the project was to provide the data to convince the users that the production rate of garbage is high that the current recycling rate is not effective enough. Initially, I thought about using a density map that displays the garbage production in the red area and the recycling rate in the blue area. However, the result was underwhelming: the map does not display the data in an organized manner, and the red and blue areas caused a cognitive load. Thus, when I analyzed the website, I redesigned everything and decided to use the multi-line graph. One of the characteristics that I liked about the website's line graph was the customization option because the feature allows storing multiple data points in a single area. In addition, it separates the multiple data points, which reduces the cognitive load.<br>
+                        <br>One of the major problems when I designed the project was to provide the data to convince the users that the production rate of garbage is high that the current recycling rate is not effective enough. Initially, I thought about using a density map that displays the garbage production in the red area and the recycling rate in the blue area. However, the result was underwhelming: the map does not display the data in an organized manner, and the red and blue areas caused a cognitive load. Thus, when I analyzed the website, I redesigned everything and decided to use the multi-line graph. One of the characteristics that I liked about the website's line graph was the customization option because the feature allows storing multiple data points in a single area. In addition, it separates the multiple data points, which reduces the cognitive load.<br>
 
-                    <br>Therefore, I incorporated the learning outcomes and applied them to the project by creating a line graph with multiple selection options. This design choice allowed me to present multiple data into a single graph area without causing cognitive load. In addition, I was able to collect more data points (initially, the planned data points were four, but the final data points were seven).
-                </p>
+                        <br>Therefore, I incorporated the learning outcomes and applied them to the project by creating a line graph with multiple selection options. This design choice allowed me to present multiple data into a single graph area without causing cognitive load. In addition, I was able to collect more data points (initially, the planned data points were four, but the final data points were seven).
+                    </p>
+                </div>
 
-                <p>
-                    <em>2nd website</em><br>
+                <div class="analysisSection">
+                    <p>
+                        <em>2nd website</em>
+                        <br>The second website that I analyzed is RMI, a website that introduces the circular economy of batteries for electric vehicles. From analyzing the website, I found a solution to the problem of displaying the impact of a product (change in data) in a dynamic manner.<br>
 
-                    <br>The second website that I analyzed is RMI, a website that introduces the circular economy of batteries for electric vehicles. From analyzing the website, I found a solution to the problem of displaying the impact of a product (change in data) in a dynamic manner.<br>
+                        <br>Another major problem that I need to resolve is how to display the impact of the speculative product over time. Unlike the first problem, I did not have any initial idea because I was completely lost. To visually display the impact, I had to create a design solution that changes the data and creates a movement at the same time. Then, I encountered this website, which utilizes a group of graphs with a control section, where users can manipulate the graph by applying an input.<br>
 
-                    <br>Another major problem that I need to resolve is how to display the impact of the speculative product over time. Unlike the first problem, I did not have any initial idea because I was completely lost. To visually display the impact, I had to create a design solution that changes the data and creates a movement at the same time. Then, I encountered this website, which utilizes a group of graphs with a control section, where users can manipulate the graph by applying an input.<br>
+                        <br>This unique method mesmerized me because I never thought of making the graph responsive. In addition, when I interact with various inputs, I was able to acquire the expected trend, even though I did not read the entire article. Therefore, inspired by the analysis, I designed the reactive chart that responds to the range input that the users interact with.<br>
+                    </p>
+                </div>
 
-                    <br>This unique method mesmerized me because I never thought of making the graph responsive. In addition, when I interact with various inputs, I was able to acquire the expected trend, even though I did not read the entire article. Therefore, inspired by the analysis, I designed the reactive chart that responds to the range input that the users interact with.<br>
-                </p>
             </div>
         </div>
     </section>
@@ -147,25 +156,25 @@
 
                     <ol>
                         <li>
-                            <em>Line graphs with multiple selection options</em>: This interaction provides the data to convince people that the production rate of garbage is increasing while the recycling rate is low. I chose a line graph over other forms because a line graph is an infographic that visually displays the trend with lines.
+                            <em>Line graphs with multiple selection options:</em> This interaction provides the data to convince people that the production rate of garbage is increasing while the recycling rate is low. I chose a line graph over other forms because a line graph is an infographic that visually displays the trend with lines.
                         </li>
                         <li>
-                            <em>Number counting animations</em>: This animation highlights the key changes of nature soon if the trend presented in the previous section continues. The animation adds volume to the numerical values (makes the numerical value higher). In addition, the animation grabs the attention to the content of the section, which guides the audience to read the numerical value and the meaning behind the numbers
+                            <em>Number counting animations:</em> This animation highlights the key changes of nature soon if the trend presented in the previous section continues. The animation adds volume to the numerical values (makes the numerical value higher). In addition, the animation grabs the attention to the content of the section, which guides the audience to read the numerical value and the meaning behind the numbers
                         </li>
                         <li>
-                            <em>Text animation for transition section</em>: The section incorporated such an animation was meant to bridge the two main chapters: one with gloomy and dark tone, and another with bright tone. Note the big change in tone, so I had to add an animation that pushes the heavy, gloomy tone out before moving to another chapter. Therefore, I included a text animation to refresh the dark tone. Also, the delay of the animation creates an anticipation and a little surprise that alarms the shift of tone.
+                            <em>Text animation for the transition section:</em> The section incorporated such an animation was meant to bridge the two main chapters: one with gloomy and dark tone, and another with bright tone. Note the big change in tone, so I had to add an animation that pushes the heavy, gloomy tone out before moving to another chapter. Therefore, I included a text animation to refresh the dark tone. Also, the delay of the animation creates an anticipation and a little surprise that alarms the shift of tone.
                         </li>
                         <li>
-                            <em>Interaction of detailed information on the 3D food printer</em>: The section incorporates such an interaction because I want to make sure that users do not get confused in this section, which contains the most important content.
+                            <em>Interaction of detailed information on the 3D food printer:</em> The section incorporates such an interaction because I want to make sure that users do not get confused in this section, which contains the most important content.
                         </li>
                         <li>
-                            <em>Doughnut charts with a slider</em>: This interaction was designed to visually display the impact of the product over time. The interaction takes the range input, and as the input changes, the doughnut chart updates with the new value. I chose the doughnut charts over other factors because the doughnut charts change the size of color blocks, which visualizes the change in data in motion. While a bar chart was another option, I found that doughnut charts create more dynamic motion than bar graphs.
+                            <em>Doughnut charts with a slider:</em> This interaction was designed to visually display the impact of the product over time. The interaction takes the range input, and as the input changes, the doughnut chart updates with the new value. I chose the doughnut charts over other factors because the doughnut charts change the size of color blocks, which visualizes the change in data in motion. While a bar chart was another option, I found that doughnut charts create more dynamic motion than bar graphs.
                         </li>
                         <li>
-                            <em>Slideshow of illustrations with captions</em>: This interaction is a simple slideshow with visible captions when the mouseover event happens. I did not add any fancy animations because I want the users to solely enjoy the narrative text and see the visuals. Therefore, I needed to create an interaction that is simple and direct, which is the slideshow interaction.
+                            <em>Slideshow of illustrations with captions:</em> This interaction is a simple slideshow with visible captions when the mouseover event happens. I did not add any fancy animations because I want the users to solely enjoy the narrative text and see the visuals. Therefore, I needed to create an interaction that is simple and direct, which is the slideshow interaction.
                         </li>
                         <li>
-                            <em>Text animation for ending</em>: This animation was selected because the animation adds the weight to the closing sentences. Compared to the text animation used for the transition section, this text animation was designed to close the project. Therefore, the animation is more heavy and dedicated to the other text animation.
+                            <em>Text animation for ending:</em> This animation was selected because the animation adds the weight to the closing sentences. Compared to the text animation used for the transition section, this text animation was designed to close the project. Therefore, the animation is more heavy and dedicated to the other text animation.
                         </li>
                     </ol>
                 </div>
@@ -234,10 +243,17 @@
 
     <footer>
         <div class="container">
-            <p>UX/UI Case Study Title Here</p>
-            <p>Your Name Here</p>
-            <address>Your email address (encoded so you don't get spam)</address>
-            <p><a href="#top">top</a></p>
+            <p>Speculating Circular Waste: An Interactive Story of Eating Trash with 3D Food Printers</p>
+            <p>Tony (Dong Hoon) Ko</p>
+            <address>
+                <p>Contact: 
+                    <a href="mailto:&#116;&#111;&#110;&#121;&#046;&#107;&#111;&#048;&#052;&#050;&#057;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"> tony.ko0429@gmail.com</a>
+                </p>
+            </address>
+            <p>
+                <br>
+                <a href="#top">BACK TO TOP</a>
+            </p>
         </div>
     </footer>
     
