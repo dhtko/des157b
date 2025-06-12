@@ -62,6 +62,25 @@ section:nth-child(even){
     text-align: center;
 }
 
+#ui li{
+    background-color: #3A5A40;
+    padding: 15px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#ui img:first-child{
+    width: 50%;
+    align-self: center;
+}
+#ui img{
+    align-self: center;
+    margin-top: 10px;
+}
 
 h1, h2 {
     margin-bottom: .5em;
@@ -81,8 +100,11 @@ p {
     margin-bottom: 0px;
 }
 
-ol li {
+ol li{
     margin-bottom: 1em;
+}
+ul li{
+    margin-bottom: 2em;
 }
 
 img {
@@ -94,7 +116,7 @@ a{
     color: #344E41;
 }
 
-p, ol li, a{
+p, ol li, ul li, a{
     font-family: 'Montserrat';
     font-size: 18px;
 }
